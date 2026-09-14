@@ -26,13 +26,25 @@ function extractEvents(html) {
   for (const block of blocks) { const text = clean(block); if (!/steam/i.test(text)) continue; const range = parseRange(text); if (!range) continue; const title = (text.match(/^(.*?Steam[^.\n]{0,100}?)(?=\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d)/i)?.[1] || text.slice(0, 100)).trim(); if (title.length < 5) continue; const id = `${range.startDate}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`; found.set(id, { id, title, ...range, description: 'Steam 공식 Upcoming Events 페이지에서 수집한 행사입니다.', genres: classify(title), sourceUrl: UPCOMING_EVENTS_URL }); }
   return [...found.values()].sort((a, b) => a.startDate.localeCompare(b.startDate));
 }
-function candidateIds(featured) { const ids = []; for (const category of Object.values(featured)) for (const item of category?.items || []) { const id = Number(item.id || String(item.url || '').match(/\/app\/(\d+)/)?.[1]); if (id && !ids.includes(id)) ids.push(id); } return ids.slice(0, 50); }
+function candidates(featured) {
+  const seen = new Map();
+  for (const category of Object.values(featured)) {
+    const categoryId = category?.id || '';
+    const categoryBonus = categoryId === 'top_sellers' ? 300 : categoryId === 'specials' ? 200 : 0;
+    for (const [index, item] of (category?.items || []).entries()) {
+      const appId = Number(item.id || String(item.url || '').match(/\/app\/(\d+)/)?.[1]);
+      if (!appId || seen.has(appId)) continue;
+      seen.set(appId, { appId, storeRank: index + 1, categoryBonus, isDiscounted: Boolean(item.discounted || item.discount_percent) });
+    }
+  }
+  return [...seen.values()].slice(0, 50);
+}
 async function collectGames() {
-  const featured = JSON.parse(await fetchText(FEATURED_URL)); const ids = candidateIds(featured); const games = [];
-  for (let i = 0; i < ids.length; i += 20) { const details = JSON.parse(await fetchText(APPDETAILS_URL + ids.slice(i, i + 20).join(','))); for (const [appId, result] of Object.entries(details)) { const app = result?.success && result.data; if (!app?.is_free && app?.type === 'game') games.push({ appId: Number(appId), name: app.name, image: app.header_image, genres: (app.genres || []).map((g) => g.description), price: app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null }); } }
+  const featured = JSON.parse(await fetchText(FEATURED_URL)); const rankedCandidates = candidates(featured); const games = [];
+  for (let i = 0; i < rankedCandidates.length; i += 20) { const batch = rankedCandidates.slice(i, i + 20); const details = JSON.parse(await fetchText(APPDETAILS_URL + batch.map((item) => item.appId).join(','))); for (const candidate of batch) { const result = details[candidate.appId]; const app = result?.success && result.data; if (!app?.is_free && app?.type === 'game') { const price = app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null; const rankingScore = candidate.categoryBonus + Math.max(0, 100 - candidate.storeRank) + (price?.discountPercent || 0) * 10 + (candidate.isDiscounted ? 100 : 0); games.push({ appId: candidate.appId, name: app.name, image: app.header_image, genres: (app.genres || []).map((g) => g.description), price, rankingScore, storeRank: candidate.storeRank }); } } }
   return games;
 }
-function attachGames(events, games) { return events.map((event) => ({ ...event, gameGroups: event.genres.map((genre) => ({ genre, games: games.filter((game) => game.genres.some((value) => value.toLowerCase().includes(genre.toLowerCase()))).sort((a, b) => (b.price?.discountPercent || 0) - (a.price?.discountPercent || 0)).slice(0, 5) })) })); }
+function attachGames(events, games) { return events.map((event) => ({ ...event, gameGroups: event.genres.map((genre) => ({ genre, games: games.filter((game) => game.genres.some((value) => value.toLowerCase().includes(genre.toLowerCase()))).sort((a, b) => b.rankingScore - a.rankingScore).slice(0, 5).map((game, index) => ({ ...game, rank: index + 1 })) })) })); }
 async function previousData() { try { return JSON.parse(await readFile(OUTPUT, 'utf8')); } catch { return { events: [] }; } }
 async function main() {
   const old = await previousData(); let events; let games = [];
