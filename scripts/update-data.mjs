@@ -20,10 +20,17 @@ function parseRange(text) {
   return { startDate: start, endDate: end };
 }
 function classify(title) { const t = title.toLowerCase(); if (t.includes('strategy')) return ['전략', '시뮬레이션']; if (t.includes('rpg')) return ['RPG', '어드벤처']; if (t.includes('shooter')) return ['액션', '인디']; if (t.includes('sport')) return ['스포츠', '레이싱']; if (t.includes('next fest')) return ['인디', '어드벤처']; return ['액션', '인디']; }
-function extractEvents(html) {
-  const blocks = html.match(/<(?:h[1-6]|strong|b)[^>]*>[\s\S]{0,240}?<\/(?:h[1-6]|strong|b)>[\s\S]{0,900}/gi) || [];
+function eventTitle(block, text) {
+  const heading = block.match(/^<(?:h[1-6]|strong|b)[^>]*>([\s\S]*?)<\/(?:h[1-6]|strong|b)>/i)?.[1];
+  const tableTitle = text.match(/(?:^|\s)([^|]{3,80}?(?:Fest|Sale|Scream)[^|]{0,40}?)\s*\|\s*(?=(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d)/i)?.[1];
+  const title = clean(tableTitle || heading || '');
+  if (title.length < 3 || title.length > 90 || /running three times|is a multi-day|celebration where/i.test(title)) return null;
+  return title;
+}
+export function extractEvents(html) {
+  const blocks = html.match(/<(?:h[1-6]|strong|b)[^>]*>[\s\S]*?<\/(?:h[1-6]|strong|b)>[\s\S]*?(?=<(?:h[1-6]|strong|b)[^>]*>|$)/gi) || [];
   const found = new Map();
-  for (const block of blocks) { const text = clean(block); if (!/steam/i.test(text)) continue; const range = parseRange(text); if (!range) continue; const title = (text.match(/^(.*?Steam[^.\n]{0,100}?)(?=\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d)/i)?.[1] || text.slice(0, 100)).trim(); if (title.length < 5) continue; const id = `${range.startDate}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`; found.set(id, { id, title, ...range, description: 'Steam 공식 Upcoming Events 페이지에서 수집한 행사입니다.', genres: classify(title), sourceUrl: UPCOMING_EVENTS_URL }); }
+  for (const block of blocks) { const text = clean(block); if (!/steam/i.test(text)) continue; const range = parseRange(text); const title = eventTitle(block, text); if (!range || !title) continue; const id = `${range.startDate}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`; found.set(id, { id, title, ...range, description: 'Steam 공식 Upcoming Events 페이지에서 수집한 행사입니다.', genres: classify(title), sourceUrl: UPCOMING_EVENTS_URL }); }
   return [...found.values()].sort((a, b) => a.startDate.localeCompare(b.startDate));
 }
 function topSellerCandidates(html) {
@@ -63,4 +70,4 @@ async function main() {
   const data = { schemaVersion: 1, generatedAt: new Date().toISOString(), source: { upcomingEvents: UPCOMING_EVENTS_URL, topSellers: TOP_SELLERS_URL, appDetails: APPDETAILS_URL }, events: games.length ? attachGames(events, games) : events };
   await mkdir(dirname(OUTPUT), { recursive: true }); const temporary = `${OUTPUT}.tmp`; await writeFile(temporary, `${JSON.stringify(data, null, 2)}\n`); await rename(temporary, OUTPUT); console.log(`Wrote ${data.events.length} events.`);
 }
-main().catch((error) => { console.error(error); process.exitCode = 1; });
+if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((error) => { console.error(error); process.exitCode = 1; });
