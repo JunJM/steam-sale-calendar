@@ -1,8 +1,9 @@
 const state = { date: new Date(), events: [], selectedId: null };
 const $ = (selector) => document.querySelector(selector);
 const dateFormat = new Intl.DateTimeFormat('ko-KR', { month: 'long', day: 'numeric' });
+const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
 
-function isoDay(date) { return date.toISOString().slice(0, 10); }
+function isoDay(date) { return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`; }
 function parseDay(value) { return new Date(`${value}T00:00:00`); }
 function formatPeriod(event) { return `${dateFormat.format(parseDay(event.startDate))} ~ ${dateFormat.format(parseDay(event.endDate))}`; }
 function eventOnDay(event, day) { const value = isoDay(day); return event.startDate <= value && value <= event.endDate; }
@@ -16,7 +17,7 @@ function renderCalendar() {
     const day = new Date(start); day.setDate(start.getDate() + index);
     const events = state.events.filter((event) => eventOnDay(event, day));
     const classes = ['day']; if (day.getMonth() !== month) classes.push('muted'); if (isoDay(day) === today) classes.push('today');
-    const labels = events.map((event) => `<button class="event ${event.id === state.selectedId ? 'active' : ''}" data-event-id="${event.id}" title="${event.title}">${event.title}</button>`).join('');
+    const labels = events.map((event) => `<button class="event ${event.id === state.selectedId ? 'active' : ''}" data-event-id="${escapeHtml(event.id)}" title="${escapeHtml(event.title)}">${escapeHtml(event.title)}</button>`).join('');
     return `<div class="${classes.join(' ')}"><span class="day-number">${day.getDate()}</span>${labels}</div>`;
   }).join('');
   document.querySelectorAll('[data-event-id]').forEach((button) => button.addEventListener('click', () => selectEvent(button.dataset.eventId)));
@@ -25,7 +26,7 @@ function renderCalendar() {
 function money(game) { if (!game.price) return '가격 정보 없음'; const currency = game.price.currency || 'KRW'; const current = new Intl.NumberFormat('ko-KR', { style: 'currency', currency, maximumFractionDigits: 0 }).format(game.price.final / 100); return game.price.discountPercent ? `<span class="discount">-${game.price.discountPercent}%</span>${current}` : current; }
 function selectEvent(id) {
   state.selectedId = id; const event = state.events.find((item) => item.id === id); if (!event) return;
-  $('#detail').innerHTML = `<h2 class="event-title">${event.title}</h2><p class="period">${formatPeriod(event)}</p><p class="description">${event.description || 'Steam 공식 예정 행사입니다. 할인 대상과 세부 내용은 행사 시작 시 Steam Store에서 확인할 수 있습니다.'}</p>${(event.gameGroups || []).map((group) => `<section class="genre"><h3>${group.genre} 대표 게임</h3><div class="game-list">${group.games.length ? group.games.map((game) => `<a class="game" href="https://store.steampowered.com/app/${game.appId}/?l=koreana" target="_blank" rel="noreferrer"><img src="${game.image}" alt="" loading="lazy"><span class="game-name">${game.name}</span><span class="price">${money(game)}</span></a>`).join('') : '<p class="no-games">현재 수집된 대표 게임이 없습니다.</p>'}</div></section>`).join('')}`;
+  $('#detail').innerHTML = `<h2 class="event-title">${escapeHtml(event.title)}</h2><p class="period">${formatPeriod(event)}</p><p class="description">${escapeHtml(event.description || 'Steam 공식 예정 행사입니다. 할인 대상과 세부 내용은 행사 시작 시 Steam Store에서 확인할 수 있습니다.')}</p>${(event.gameGroups || []).map((group) => `<section class="genre"><h3>${escapeHtml(group.genre)} 대표 게임</h3><div class="game-list">${group.games.length ? group.games.map((game) => `<a class="game" href="https://store.steampowered.com/app/${Number(game.appId)}/?l=koreana" target="_blank" rel="noreferrer"><img src="${escapeHtml(game.image)}" alt="" loading="lazy"><span class="game-name">${escapeHtml(game.name)}</span><span class="price">${money(game)}</span></a>`).join('') : '<p class="no-games">현재 수집된 대표 게임이 없습니다.</p>'}</div></section>`).join('')}`;
   renderCalendar();
 }
 async function boot() {

@@ -1,6 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
-  "source": { "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events" },
-  "events": []
+  "generatedAt": "2026-09-14T06:30:00.000Z",
+  "source": { "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events", "store": "https://store.steampowered.com/api/featuredcategories/?cc=kr&l=koreana" },
+  "events": [
+    { "id": "2026-09-14-party-based-rpg-fest", "title": "Party-Based RPG Fest", "startDate": "2026-09-14", "endDate": "2026-09-21", "description": "파티 기반 RPG를 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["RPG", "어드벤처"], "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events", "gameGroups": [] },
+    { "id": "2026-10-01-autumn-sale", "title": "Steam Autumn Sale 2026", "startDate": "2026-10-01", "endDate": "2026-10-08", "description": "Steam 공식 가을 할인 행사입니다.", "genres": ["액션", "인디"], "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events", "gameGroups": [] },
+    { "id": "2026-10-12-cooking-fest", "title": "Cooking Fest", "startDate": "2026-10-12", "endDate": "2026-10-19", "description": "요리와 음식 만들기를 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["시뮬레이션", "인디"], "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events", "gameGroups": [] },
+    { "id": "2026-10-19-next-fest", "title": "Steam Next Fest", "startDate": "2026-10-19", "endDate": "2026-10-26", "description": "출시 예정 게임의 데모를 체험할 수 있는 Steam 공식 Next Fest입니다.", "genres": ["인디", "어드벤처"], "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events", "gameGroups": [] },
+    { "id": "2026-10-26-steam-scream-v", "title": "Steam Scream V", "startDate": "2026-10-26", "endDate": "2026-11-02", "description": "호러와 할로윈 게임을 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["액션", "어드벤처"], "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events", "gameGroups": [] },
+    { "id": "2026-11-16-auto-battler-rpg-fest", "title": "Auto-Battler RPG Fest", "startDate": "2026-11-16", "endDate": "2026-11-23", "description": "자동 전투 RPG를 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["RPG", "전략"], "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events", "gameGroups": [] },
+    { "id": "2026-12-17-winter-sale", "title": "Steam Winter Sale 2026", "startDate": "2026-12-17", "endDate": "2027-01-04", "description": "Steam 공식 겨울 할인 행사입니다.", "genres": ["액션", "인디"], "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events", "gameGroups": [] }
+  ]
 }
