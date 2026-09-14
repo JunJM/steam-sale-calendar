@@ -5,8 +5,8 @@ Steam 공식 예정 행사와 Store 공개 데이터를 하루 한 번 수집해
 ## 데이터 원칙
 
 - 행사 일정은 [Steamworks Upcoming Events](https://partner.steamgames.com/doc/marketing/upcoming_events) 공개 페이지에서 수집합니다.
-- 게임·가격·할인 정보는 Steam Store의 공개 `featuredcategories` 및 `appdetails` 응답만 사용합니다.
-- 대량 호출을 피하기 위해 매일 한 번, Store 추천 후보 최대 50개만 조회합니다.
+- 랭킹은 Steam 공식 Top Sellers 차트(매출 순위)에서 최대 100개를 가져오고, `appdetails`로 가격·할인·장르·이미지를 보강합니다.
+- 대량 호출을 피하기 위해 하루 한 번만 차트를 읽고, AppID 20개씩 최대 5회로 상세 조회를 제한합니다.
 - 일정 페이지의 마크업이 바뀌거나 수집이 실패하면 기존 `data/events.json`을 유지합니다.
 - API 키나 비밀값을 사용하지 않으며, 프론트엔드는 생성된 JSON만 읽습니다.
 

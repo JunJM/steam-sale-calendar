@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const OUTPUT = resolve(ROOT, 'data/events.json');
 const UPCOMING_EVENTS_URL = 'https://partner.steamgames.com/doc/marketing/upcoming_events';
-const FEATURED_URL = 'https://store.steampowered.com/api/featuredcategories/?cc=kr&l=koreana';
+const TOP_SELLERS_URL = 'https://store.steampowered.com/charts/topselling/KR/?l=koreana';
 const APPDETAILS_URL = 'https://store.steampowered.com/api/appdetails?cc=kr&l=koreana&appids=';
 const FETCH_OPTIONS = { headers: { 'user-agent': 'steam-sale-calendar/1.0 (GitHub Actions; low-frequency public data collector)', accept: 'text/html,application/json' } };
 const MONTHS = Object.fromEntries(['january','february','march','april','may','june','july','august','september','october','november','december'].map((m, i) => [m, i]));
@@ -26,30 +26,41 @@ function extractEvents(html) {
   for (const block of blocks) { const text = clean(block); if (!/steam/i.test(text)) continue; const range = parseRange(text); if (!range) continue; const title = (text.match(/^(.*?Steam[^.\n]{0,100}?)(?=\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d)/i)?.[1] || text.slice(0, 100)).trim(); if (title.length < 5) continue; const id = `${range.startDate}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`; found.set(id, { id, title, ...range, description: 'Steam 공식 Upcoming Events 페이지에서 수집한 행사입니다.', genres: classify(title), sourceUrl: UPCOMING_EVENTS_URL }); }
   return [...found.values()].sort((a, b) => a.startDate.localeCompare(b.startDate));
 }
-function candidates(featured) {
-  const seen = new Map();
-  for (const category of Object.values(featured)) {
-    const categoryId = category?.id || '';
-    const categoryBonus = categoryId === 'top_sellers' ? 300 : categoryId === 'specials' ? 200 : 0;
-    for (const [index, item] of (category?.items || []).entries()) {
-      const appId = Number(item.id || String(item.url || '').match(/\/app\/(\d+)/)?.[1]);
-      if (!appId || seen.has(appId)) continue;
-      seen.set(appId, { appId, storeRank: index + 1, categoryBonus, isDiscounted: Boolean(item.discounted || item.discount_percent) });
+function topSellerCandidates(html) {
+  const matches = html.matchAll(/href=["'](?:https?:\/\/store\.steampowered\.com)?\/app\/(\d+)(?:\/[^"']*)?["']/gi);
+  const ids = [];
+  for (const match of matches) { const appId = Number(match[1]); if (appId && !ids.includes(appId)) ids.push(appId); }
+  if (ids.length < 20) throw new Error(`Top Sellers chart yielded only ${ids.length} app links`);
+  return ids.slice(0, 100).map((appId, index) => ({ appId, topSellerRank: index + 1 }));
+}
+async function collectTopSellerGames() {
+  const candidates = topSellerCandidates(await fetchText(TOP_SELLERS_URL)); const games = [];
+  for (let i = 0; i < candidates.length; i += 20) {
+    const batch = candidates.slice(i, i + 20);
+    const details = JSON.parse(await fetchText(APPDETAILS_URL + batch.map((item) => item.appId).join(',')));
+    for (const candidate of batch) {
+      const result = details[candidate.appId]; const app = result?.success && result.data;
+      if (!app || app.type !== 'game') continue;
+      const price = app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null;
+      games.push({ appId: candidate.appId, name: app.name, image: app.header_image, genres: (app.genres || []).map((g) => g.description), price, topSellerRank: candidate.topSellerRank });
     }
   }
-  return [...seen.values()].slice(0, 50);
-}
-async function collectGames() {
-  const featured = JSON.parse(await fetchText(FEATURED_URL)); const rankedCandidates = candidates(featured); const games = [];
-  for (let i = 0; i < rankedCandidates.length; i += 20) { const batch = rankedCandidates.slice(i, i + 20); const details = JSON.parse(await fetchText(APPDETAILS_URL + batch.map((item) => item.appId).join(','))); for (const candidate of batch) { const result = details[candidate.appId]; const app = result?.success && result.data; if (!app?.is_free && app?.type === 'game') { const price = app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null; const rankingScore = candidate.categoryBonus + Math.max(0, 100 - candidate.storeRank) + (price?.discountPercent || 0) * 10 + (candidate.isDiscounted ? 100 : 0); games.push({ appId: candidate.appId, name: app.name, image: app.header_image, genres: (app.genres || []).map((g) => g.description), price, rankingScore, storeRank: candidate.storeRank }); } } }
   return games;
 }
-function attachGames(events, games) { return events.map((event) => ({ ...event, gameGroups: event.genres.map((genre) => ({ genre, games: games.filter((game) => game.genres.some((value) => value.toLowerCase().includes(genre.toLowerCase()))).sort((a, b) => b.rankingScore - a.rankingScore).slice(0, 5).map((game, index) => ({ ...game, rank: index + 1 })) })) })); }
+function attachGames(events, games) {
+  return events.map((event) => ({ ...event, gameGroups: event.genres.map((genre) => ({
+    genre,
+    games: games.filter((game) => game.genres.some((value) => value.toLowerCase().includes(genre.toLowerCase())))
+      .sort((a, b) => a.topSellerRank - b.topSellerRank || (b.price?.discountPercent || 0) - (a.price?.discountPercent || 0))
+      .slice(0, 5).map((game, index) => ({ ...game, rank: index + 1 })),
+  })) }));
+}
 async function previousData() { try { return JSON.parse(await readFile(OUTPUT, 'utf8')); } catch { return { events: [] }; } }
 async function main() {
-  const old = await previousData(); let events; let games = [];
-  try { events = extractEvents(await fetchText(UPCOMING_EVENTS_URL)); if (!events.length) throw new Error('No event ranges found in official page'); games = await collectGames(); } catch (error) { console.warn(`Collection failed; preserving last valid data: ${error.message}`); events = old.events || []; }
-  const data = { schemaVersion: 1, generatedAt: new Date().toISOString(), source: { upcomingEvents: UPCOMING_EVENTS_URL, store: FEATURED_URL }, events: games.length ? attachGames(events, games) : events };
+  const old = await previousData(); let events = old.events || []; let games = [];
+  try { const collected = extractEvents(await fetchText(UPCOMING_EVENTS_URL)); if (!collected.length) throw new Error('No event ranges found in official page'); events = collected; } catch (error) { console.warn(`Event collection failed; preserving last valid events: ${error.message}`); }
+  try { games = await collectTopSellerGames(); } catch (error) { console.warn(`Top Sellers collection failed; preserving last valid game groups: ${error.message}`); }
+  const data = { schemaVersion: 1, generatedAt: new Date().toISOString(), source: { upcomingEvents: UPCOMING_EVENTS_URL, topSellers: TOP_SELLERS_URL, appDetails: APPDETAILS_URL }, events: games.length ? attachGames(events, games) : events };
   await mkdir(dirname(OUTPUT), { recursive: true }); const temporary = `${OUTPUT}.tmp`; await writeFile(temporary, `${JSON.stringify(data, null, 2)}\n`); await rename(temporary, OUTPUT); console.log(`Wrote ${data.events.length} events.`);
 }
 main().catch((error) => { console.error(error); process.exitCode = 1; });
