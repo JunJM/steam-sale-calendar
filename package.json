@@ -1,0 +1,9 @@
+{
+  "name": "steam-sale-calendar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update:data": "node scripts/update-data.mjs",
+    "test": "node --test"
+  }
+}
