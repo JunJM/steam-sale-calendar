@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T06:51:53.016Z",
+  "generatedAt": "2026-09-29T06:53:31.985Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,37 +9,21 @@
   },
   "topGames": [
     {
-      "appId": 578080,
-      "name": "PUBG: BATTLEGROUNDS",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1786493086",
+      "appId": 1912410,
+      "name": "Minecraft Dungeons II",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1789572111",
       "genres": [
         "액션",
         "어드벤처",
-        "대규모 멀티플레이어",
-        "무료 플레이"
+        "RPG"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 3480000,
+        "discountPercent": 0
+      },
       "topSellerRank": 1,
       "rank": 1
-    },
-    {
-      "appId": 2139460,
-      "name": "Once Human",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/c18b08a2f93dec32fcc5fa71bc2da44ee42de1f0/header.jpg?t=1786675226",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "캐주얼",
-        "대규모 멀티플레이어",
-        "레이싱",
-        "RPG",
-        "시뮬레이션",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 2,
-      "rank": 2
     },
     {
       "appId": 2288340,
@@ -53,17 +37,20 @@
         "final": 8980000,
         "discountPercent": 0
       },
-      "topSellerRank": 3,
-      "rank": 3
+      "topSellerRank": 2,
+      "rank": 2
     },
     {
-      "appId": 1049590,
-      "name": "이터널 리턴",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049590/72918ebacd0d4f8537969dc8b976ceb98f681cab/header.jpg?t=1789544685",
-      "genres": [],
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
       "price": null,
-      "topSellerRank": 4,
-      "rank": 4
+      "topSellerRank": 3,
+      "rank": 3
     },
     {
       "appId": 1867240,
@@ -81,42 +68,8 @@
         "final": 4727000,
         "discountPercent": 0
       },
-      "topSellerRank": 5,
-      "rank": 5
-    },
-    {
-      "appId": 1912410,
-      "name": "Minecraft Dungeons II",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1789572111",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3480000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 6,
-      "rank": 6
-    },
-    {
-      "appId": 2638890,
-      "name": "귀무자 Way of the Sword",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/ce31174fea86d0bafa21b26e853dcd0b7326e36f/header.jpg?t=1790383151",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 7980000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 7,
-      "rank": 7
+      "topSellerRank": 4,
+      "rank": 4
     },
     {
       "appId": 4126040,
@@ -132,39 +85,71 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 8,
-      "rank": 8
+      "topSellerRank": 6,
+      "rank": 5
     },
     {
-      "appId": 1973530,
-      "name": "Limbus Company",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1790559030",
+      "appId": 4019220,
+      "name": "Dressmaker",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1790605593",
       "genres": [
+        "캐주얼",
+        "시뮬레이션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 1600000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 7,
+      "rank": 6
+    },
+    {
+      "appId": 3669870,
+      "name": "CONTROL Resonant (컨트롤：레조넌트)",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1e0c76e4253d347bb1304c3f213570251d924edf/header.jpg?t=1790259464",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 6480000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 8,
+      "rank": 7
+    },
+    {
+      "appId": 230410,
+      "name": "Warframe",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1790176468",
+      "genres": [
+        "액션",
+        "RPG",
         "무료 플레이"
       ],
       "price": null,
       "topSellerRank": 9,
-      "rank": 9
+      "rank": 8
     },
     {
-      "appId": 3564740,
-      "name": "연운",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/1646a998bc0359a3607a96edfae7038767ede17a/header_alt_assets_9_koreana.jpg?t=1790514845",
+      "appId": 3493540,
+      "name": "Transport Fever 3",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3493540/4c179a79a6286b15575ca3f1a6ca620e5d159b19/header.jpg?t=1789729374",
       "genres": [
-        "액션",
-        "어드벤처",
         "캐주얼",
-        "인디",
-        "대규모 멀티플레이어",
-        "레이싱",
-        "RPG",
         "시뮬레이션",
-        "전략",
-        "무료 플레이"
+        "전략"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 5500000,
+        "discountPercent": 0
+      },
       "topSellerRank": 10,
-      "rank": 10
+      "rank": 9
     }
   ],
   "topGamesLoadFailed": false,
