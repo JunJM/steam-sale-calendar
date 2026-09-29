@@ -1,17 +1,399 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "generatedAt": "2026-09-29T06:40:43.644Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
-    "status": "verified-static-schedule"
+    "topSellers": "https://store.steampowered.com/charts/topselling/KR/?l=koreana",
+    "appDetails": "https://store.steampowered.com/api/appdetails?appids=",
+    "rankingSource": "store-featured-fallback"
   },
   "events": [
-    { "id": "2026-09-14-party-based-rpg-fest", "title": "Party-Based RPG Fest", "startDate": "2026-09-14", "endDate": "2026-09-21", "description": "파티 기반 RPG를 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["RPG", "어드벤처"], "gameGroups": [] },
-    { "id": "2026-10-01-autumn-sale", "title": "Steam Autumn Sale 2026", "startDate": "2026-10-01", "endDate": "2026-10-08", "description": "Steam 공식 가을 할인 행사입니다.", "genres": ["액션", "인디"], "gameGroups": [] },
-    { "id": "2026-10-12-cooking-fest", "title": "Cooking Fest", "startDate": "2026-10-12", "endDate": "2026-10-19", "description": "요리와 음식 만들기를 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["시뮬레이션", "인디"], "gameGroups": [] },
-    { "id": "2026-10-19-next-fest", "title": "Steam Next Fest", "startDate": "2026-10-19", "endDate": "2026-10-26", "description": "출시 예정 게임의 데모를 체험할 수 있는 Steam 공식 Next Fest입니다.", "genres": ["인디", "어드벤처"], "gameGroups": [] },
-    { "id": "2026-10-26-steam-scream-v", "title": "Steam Scream V", "startDate": "2026-10-26", "endDate": "2026-11-02", "description": "호러와 할로윈 게임을 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["액션", "어드벤처"], "gameGroups": [] },
-    { "id": "2026-11-16-auto-battler-rpg-fest", "title": "Auto-Battler RPG Fest", "startDate": "2026-11-16", "endDate": "2026-11-23", "description": "자동 전투 RPG를 주제로 하는 Steam 공식 테마 할인 행사입니다.", "genres": ["RPG", "전략"], "gameGroups": [] },
-    { "id": "2026-12-17-winter-sale", "title": "Steam Winter Sale 2026", "startDate": "2026-12-17", "endDate": "2027-01-04", "description": "Steam 공식 겨울 할인 행사입니다.", "genres": ["액션", "인디"], "gameGroups": [] }
+    {
+      "id": "2026-09-14-party-based-rpg-fest",
+      "title": "Party-Based RPG Fest",
+      "startDate": "2026-09-14",
+      "endDate": "2026-09-21",
+      "description": "파티 기반 RPG를 주제로 하는 Steam 공식 테마 할인 행사입니다.",
+      "genres": [
+        "RPG",
+        "어드벤처"
+      ],
+      "gameGroups": [
+        {
+          "genre": "파티 기반 RPG",
+          "loadFailed": false,
+          "games": []
+        }
+      ],
+      "rankingGroups": [
+        "파티 기반 RPG"
+      ]
+    },
+    {
+      "id": "2026-10-01-autumn-sale",
+      "title": "Steam Autumn Sale 2026",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-08",
+      "description": "Steam 공식 가을 할인 행사입니다.",
+      "genres": [
+        "액션",
+        "인디"
+      ],
+      "gameGroups": [
+        {
+          "genre": "전체 인기 할인",
+          "loadFailed": false,
+          "games": [
+            {
+              "appId": 292030,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/55647077a1dc7429df192ef8b94ed7d84d877834/hero_capsule_2x.jpg?t=1788333513",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1001,
+              "rank": 1
+            },
+            {
+              "appId": 3948120,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/eeff53902ce7b44551b9718f/9d7dbdbe9b936cb966e7320f188ce2d4e5fba89b/vertical_capsule_english.png?t=1790095799",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1002,
+              "rank": 2
+            },
+            {
+              "appId": 3398110,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/e9d00df0c87b203b49410b6a/2cee7d95332190d73b6884c8f0b7ab98a55cc26f/vertical_capsule_english.png?t=1787160850",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1003,
+              "rank": 3
+            },
+            {
+              "appId": 1449110,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/a23cece7f1df89a24e2bf56f932bb135f709303f/hero_capsule_2x.jpg?t=1761760147",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1004,
+              "rank": 4
+            },
+            {
+              "appId": 259680,
+              "name": "Tales of Maj'Eyal",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/259680/header.jpg?t=1790200302",
+              "genres": [],
+              "price": {
+                "currency": "KRW",
+                "final": 375000,
+                "discountPercent": 50
+              },
+              "topSellerRank": 1005,
+              "rank": 5
+            }
+          ]
+        },
+        {
+          "genre": "RPG",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "액션·어드벤처",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "인디",
+          "loadFailed": false,
+          "games": []
+        }
+      ],
+      "rankingGroups": [
+        "전체 인기 할인",
+        "RPG",
+        "액션·어드벤처",
+        "인디"
+      ]
+    },
+    {
+      "id": "2026-10-12-cooking-fest",
+      "title": "Cooking Fest",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-19",
+      "description": "요리와 음식 만들기를 주제로 하는 Steam 공식 테마 할인 행사입니다.",
+      "genres": [
+        "시뮬레이션",
+        "인디"
+      ],
+      "gameGroups": [
+        {
+          "genre": "요리·식당 경영",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "협동·파티",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "캐주얼",
+          "loadFailed": false,
+          "games": []
+        }
+      ],
+      "rankingGroups": [
+        "요리·식당 경영",
+        "협동·파티",
+        "캐주얼"
+      ]
+    },
+    {
+      "id": "2026-10-19-next-fest",
+      "title": "Steam Next Fest",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-26",
+      "description": "출시 예정 게임의 데모를 체험할 수 있는 Steam 공식 Next Fest입니다.",
+      "genres": [
+        "인디",
+        "어드벤처"
+      ],
+      "gameGroups": [
+        {
+          "genre": "데모 인기작",
+          "loadFailed": false,
+          "games": [
+            {
+              "appId": 292030,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/55647077a1dc7429df192ef8b94ed7d84d877834/hero_capsule_2x.jpg?t=1788333513",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1001,
+              "rank": 1
+            },
+            {
+              "appId": 3948120,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/eeff53902ce7b44551b9718f/9d7dbdbe9b936cb966e7320f188ce2d4e5fba89b/vertical_capsule_english.png?t=1790095799",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1002,
+              "rank": 2
+            },
+            {
+              "appId": 3398110,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/e9d00df0c87b203b49410b6a/2cee7d95332190d73b6884c8f0b7ab98a55cc26f/vertical_capsule_english.png?t=1787160850",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1003,
+              "rank": 3
+            },
+            {
+              "appId": 1449110,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/a23cece7f1df89a24e2bf56f932bb135f709303f/hero_capsule_2x.jpg?t=1761760147",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1004,
+              "rank": 4
+            },
+            {
+              "appId": 259680,
+              "name": "Tales of Maj'Eyal",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/259680/header.jpg?t=1790200302",
+              "genres": [],
+              "price": {
+                "currency": "KRW",
+                "final": 375000,
+                "discountPercent": 50
+              },
+              "topSellerRank": 1005,
+              "rank": 5
+            }
+          ]
+        },
+        {
+          "genre": "액션",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "RPG",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "인디",
+          "loadFailed": false,
+          "games": []
+        }
+      ],
+      "rankingGroups": [
+        "데모 인기작",
+        "액션",
+        "RPG",
+        "인디"
+      ]
+    },
+    {
+      "id": "2026-10-26-steam-scream-v",
+      "title": "Steam Scream V",
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-02",
+      "description": "호러와 할로윈 게임을 주제로 하는 Steam 공식 테마 할인 행사입니다.",
+      "genres": [
+        "액션",
+        "어드벤처"
+      ],
+      "gameGroups": [
+        {
+          "genre": "공포",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "생존 공포",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "협동 공포",
+          "loadFailed": false,
+          "games": []
+        }
+      ],
+      "rankingGroups": [
+        "공포",
+        "생존 공포",
+        "협동 공포"
+      ]
+    },
+    {
+      "id": "2026-11-16-auto-battler-rpg-fest",
+      "title": "Auto-Battler RPG Fest",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-23",
+      "description": "자동 전투 RPG를 주제로 하는 Steam 공식 테마 할인 행사입니다.",
+      "genres": [
+        "RPG",
+        "전략"
+      ],
+      "gameGroups": [
+        {
+          "genre": "오토배틀러",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "덱빌딩·로그라이크",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "전략 RPG",
+          "loadFailed": false,
+          "games": []
+        }
+      ],
+      "rankingGroups": [
+        "오토배틀러",
+        "덱빌딩·로그라이크",
+        "전략 RPG"
+      ]
+    },
+    {
+      "id": "2026-12-17-winter-sale",
+      "title": "Steam Winter Sale 2026",
+      "startDate": "2026-12-17",
+      "endDate": "2027-01-04",
+      "description": "Steam 공식 겨울 할인 행사입니다.",
+      "genres": [
+        "액션",
+        "인디"
+      ],
+      "gameGroups": [
+        {
+          "genre": "전체 인기 할인",
+          "loadFailed": false,
+          "games": [
+            {
+              "appId": 292030,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/55647077a1dc7429df192ef8b94ed7d84d877834/hero_capsule_2x.jpg?t=1788333513",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1001,
+              "rank": 1
+            },
+            {
+              "appId": 3948120,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/eeff53902ce7b44551b9718f/9d7dbdbe9b936cb966e7320f188ce2d4e5fba89b/vertical_capsule_english.png?t=1790095799",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1002,
+              "rank": 2
+            },
+            {
+              "appId": 3398110,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/e9d00df0c87b203b49410b6a/2cee7d95332190d73b6884c8f0b7ab98a55cc26f/vertical_capsule_english.png?t=1787160850",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1003,
+              "rank": 3
+            },
+            {
+              "appId": 1449110,
+              "name": "주중 특가",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/a23cece7f1df89a24e2bf56f932bb135f709303f/hero_capsule_2x.jpg?t=1761760147",
+              "genres": [],
+              "price": null,
+              "topSellerRank": 1004,
+              "rank": 4
+            },
+            {
+              "appId": 259680,
+              "name": "Tales of Maj'Eyal",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/259680/header.jpg?t=1790200302",
+              "genres": [],
+              "price": {
+                "currency": "KRW",
+                "final": 375000,
+                "discountPercent": 50
+              },
+              "topSellerRank": 1005,
+              "rank": 5
+            }
+          ]
+        },
+        {
+          "genre": "RPG",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "액션·어드벤처",
+          "loadFailed": false,
+          "games": []
+        },
+        {
+          "genre": "인디",
+          "loadFailed": false,
+          "games": []
+        }
+      ],
+      "rankingGroups": [
+        "전체 인기 할인",
+        "RPG",
+        "액션·어드벤처",
+        "인디"
+      ]
+    }
   ]
 }

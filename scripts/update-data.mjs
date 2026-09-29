@@ -68,19 +68,37 @@ async function collectFeaturedGames() {
   if (!candidates.length) throw new Error('Store featured categories yielded no games');
   return candidates.slice(0, 50);
 }
-function attachGames(events, games) {
-  return events.map((event) => ({ ...event, gameGroups: [{
-    genre: '추천 할인 게임',
-    games: games.slice().sort((a, b) => a.topSellerRank - b.topSellerRank || (b.price?.discountPercent || 0) - (a.price?.discountPercent || 0)).slice(0, 5).map((game, index) => ({ ...game, rank: index + 1 })),
-  }] }));
+const RANKING_GROUPS = {
+  'party-based-rpg': [{ genre: '파티 기반 RPG', genres: ['RPG'] }],
+  'autumn-sale': [{ genre: '전체 인기 할인', all: true }, { genre: 'RPG', genres: ['RPG'] }, { genre: '액션·어드벤처', genres: ['Action', 'Adventure'] }, { genre: '인디', genres: ['Indie'] }],
+  'cooking-fest': [{ genre: '요리·식당 경영', genres: ['Simulation'] }, { genre: '협동·파티', genres: ['Casual'] }, { genre: '캐주얼', genres: ['Casual'] }],
+  'next-fest': [{ genre: '데모 인기작', all: true }, { genre: '액션', genres: ['Action'] }, { genre: 'RPG', genres: ['RPG'] }, { genre: '인디', genres: ['Indie'] }],
+  'steam-scream': [{ genre: '공포', genres: [] }, { genre: '생존 공포', genres: [] }, { genre: '협동 공포', genres: [] }],
+  'auto-battler-rpg': [{ genre: '오토배틀러', genres: ['Strategy'] }, { genre: '덱빌딩·로그라이크', genres: [] }, { genre: '전략 RPG', genres: ['Strategy', 'RPG'] }],
+  'winter-sale': [{ genre: '전체 인기 할인', all: true }, { genre: 'RPG', genres: ['RPG'] }, { genre: '액션·어드벤처', genres: ['Action', 'Adventure'] }, { genre: '인디', genres: ['Indie'] }],
+};
+function rankingGroupsFor(event) { const key = Object.keys(RANKING_GROUPS).find((name) => event.id.includes(name)); return key ? RANKING_GROUPS[key] : [{ genre: '추천 할인 게임', all: true }]; }
+function sortAndRank(games) { return games.slice().sort((a, b) => a.topSellerRank - b.topSellerRank || (b.price?.discountPercent || 0) - (a.price?.discountPercent || 0)).slice(0, 5).map((game, index) => ({ ...game, rank: index + 1 })); }
+function attachGames(events, games, loadFailed = false) {
+  return events.map((event) => {
+    const rankingGroups = rankingGroupsFor(event);
+    return { ...event, rankingGroups: rankingGroups.map(({ genre }) => genre), gameGroups: rankingGroups.map((group) => {
+      const matching = group.all ? games : group.genres.length ? games.filter((game) => group.genres.every((genre) => game.genres?.includes(genre))) : [];
+      return { genre: group.genre, loadFailed, games: loadFailed ? [] : sortAndRank(matching) };
+    }) };
+  });
 }
 async function readJson(path, fallback) { try { return JSON.parse(await readFile(path, 'utf8')); } catch { return fallback; } }
 function validEvents(events) { return Array.isArray(events) && events.length >= 3 && events.every((event) => event.title.length <= 90 && !/running three times|multi-day celebration/i.test(event.title)); }
 async function main() {
   const old = await readJson(OUTPUT, { events: [] }); const fallback = await readJson(STATIC_EVENTS, { events: [] }); let events = validEvents(old.events) ? old.events : fallback.events; let games = []; let rankingSource = 'top-sellers';
   try { const collected = extractEvents(await fetchText(UPCOMING_EVENTS_URL)); if (validEvents(collected)) events = collected; else console.warn('Event collection did not pass validation; retaining verified schedule.'); } catch (error) { console.warn(`Event collection failed; retaining verified schedule: ${error.message}`); }
-  try { games = await collectTopSellerGames(); } catch (error) { console.warn(`Top Sellers collection failed; using Store featured fallback: ${error.message}`); games = await collectFeaturedGames(); rankingSource = 'store-featured-fallback'; }
-  const data = { schemaVersion: 1, generatedAt: new Date().toISOString(), source: { upcomingEvents: UPCOMING_EVENTS_URL, topSellers: TOP_SELLERS_URL, appDetails: APPDETAILS_URL, rankingSource }, events: attachGames(events, games) };
+  let gameLoadFailed = false;
+  try { games = await collectTopSellerGames(); } catch (error) {
+    console.warn(`Top Sellers collection failed; using Store featured fallback: ${error.message}`);
+    try { games = await collectFeaturedGames(); rankingSource = 'store-featured-fallback'; } catch (fallbackError) { console.warn(`Store featured fallback failed: ${fallbackError.message}`); rankingSource = 'unavailable'; gameLoadFailed = true; }
+  }
+  const data = { schemaVersion: 1, generatedAt: new Date().toISOString(), source: { upcomingEvents: UPCOMING_EVENTS_URL, topSellers: TOP_SELLERS_URL, appDetails: APPDETAILS_URL, rankingSource }, events: attachGames(events, games, gameLoadFailed) };
   await mkdir(dirname(OUTPUT), { recursive: true }); const temporary = `${OUTPUT}.tmp`; await writeFile(temporary, `${JSON.stringify(data, null, 2)}\n`); await rename(temporary, OUTPUT); console.log(`Wrote ${data.events.length} events.`);
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((error) => { console.error(error); process.exitCode = 1; });
