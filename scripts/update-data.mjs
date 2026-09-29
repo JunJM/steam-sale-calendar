@@ -8,12 +8,13 @@ const STATIC_EVENTS = resolve(ROOT, 'data/events.static.json');
 const UPCOMING_EVENTS_URL = 'https://partner.steamgames.com/doc/marketing/upcoming_events';
 const TOP_SELLERS_URL = 'https://store.steampowered.com/charts/topselling/KR/?l=koreana';
 const FEATURED_URL = 'https://store.steampowered.com/api/featuredcategories/?cc=kr&l=koreana';
-const APPDETAILS_URL = 'https://store.steampowered.com/api/appdetails?cc=kr&l=koreana&appids=';
+const APPDETAILS_URL = 'https://store.steampowered.com/api/appdetails?appids=';
 const FETCH_OPTIONS = { headers: { 'user-agent': 'steam-sale-calendar/1.0 (GitHub Actions; low-frequency public data collector)', accept: 'text/html,application/json' } };
 const MONTHS = Object.fromEntries(['january','february','march','april','may','june','july','august','september','october','november','december'].map((m, i) => [m, i]));
 
 const clean = (value) => value.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/gi, ' ').replace(/\s+/g, ' ').trim();
 async function fetchText(url) { const response = await fetch(url, FETCH_OPTIONS); if (!response.ok) throw new Error(`${response.status} ${url}`); return response.text(); }
+function appDetailsUrl(appIds) { return `${APPDETAILS_URL}${appIds.join(',')}&cc=kr&l=koreana`; }
 function toDate(year, monthName, day) { return `${year}-${String(MONTHS[monthName.toLowerCase()] + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`; }
 function parseRange(text) {
   const range = text.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*(?:[-–—]|to)\s*(?:(January|February|March|April|May|June|July|August|September|October|November|December)\s+)?(\d{1,2})(?:,?\s*(20\d{2}))?/i);
@@ -40,13 +41,13 @@ function topSellerCandidates(html) {
   const ids = [];
   for (const match of matches) { const appId = Number(match[1]); if (appId && !ids.includes(appId)) ids.push(appId); }
   if (ids.length < 20) throw new Error(`Top Sellers chart yielded only ${ids.length} app links`);
-  return ids.slice(0, 100).map((appId, index) => ({ appId, topSellerRank: index + 1 }));
+  return ids.slice(0, 50).map((appId, index) => ({ appId, topSellerRank: index + 1 }));
 }
 async function collectTopSellerGames() {
   const candidates = topSellerCandidates(await fetchText(TOP_SELLERS_URL)); const games = [];
-  for (let i = 0; i < candidates.length; i += 20) {
-    const batch = candidates.slice(i, i + 20);
-    const details = JSON.parse(await fetchText(APPDETAILS_URL + batch.map((item) => item.appId).join(',')));
+  for (let i = 0; i < candidates.length; i += 5) {
+    const batch = candidates.slice(i, i + 5);
+    const details = JSON.parse(await fetchText(appDetailsUrl(batch.map((item) => item.appId))));
     for (const candidate of batch) {
       const result = details[candidate.appId]; const app = result?.success && result.data;
       if (!app || app.type !== 'game') continue;
@@ -63,8 +64,8 @@ async function collectFeaturedGames() {
     if (appId && !candidates.some((candidate) => candidate.appId === appId)) candidates.push({ appId, topSellerRank: 1000 + candidates.length + 1 });
   }
   const games = [];
-  for (let i = 0; i < candidates.length && i < 50; i += 20) {
-    const batch = candidates.slice(i, i + 20); const details = JSON.parse(await fetchText(APPDETAILS_URL + batch.map((item) => item.appId).join(',')));
+  for (let i = 0; i < candidates.length && i < 50; i += 5) {
+    const batch = candidates.slice(i, i + 5); const details = JSON.parse(await fetchText(appDetailsUrl(batch.map((item) => item.appId))));
     for (const candidate of batch) { const app = details[candidate.appId]?.success && details[candidate.appId].data; if (app?.type === 'game') games.push({ appId: candidate.appId, name: app.name, image: app.header_image, genres: (app.genres || []).map((genre) => genre.description), price: app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null, topSellerRank: candidate.topSellerRank }); }
   }
   if (!games.length) throw new Error('Store featured categories yielded no game details');
