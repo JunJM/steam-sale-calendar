@@ -17,7 +17,7 @@ function renderCalendar() {
     const day = new Date(start); day.setDate(start.getDate() + index);
     const events = state.events.filter((event) => eventOnDay(event, day));
     const classes = ['day']; if (day.getMonth() !== month) classes.push('muted'); if (isoDay(day) === today) classes.push('today');
-    const labels = events.map((event) => `<button class="event ${event.id === state.selectedId ? 'active' : ''}" data-event-id="${escapeHtml(event.id)}" title="${escapeHtml(event.title)}">${escapeHtml(event.title)}</button>`).join('');
+    const labels = events.map((event) => { const firstDay = event.startDate === isoDay(day); const range = `${event.startDate.slice(5).replace('-', '/')}–${event.endDate.slice(5).replace('-', '/')}`; return `<button class="event ${firstDay ? '' : 'continues'} ${event.id === state.selectedId ? 'active' : ''}" data-event-id="${escapeHtml(event.id)}" title="${escapeHtml(event.title)} · ${range}">${firstDay ? `${escapeHtml(event.title)} · ${range}` : '할인 진행 중'}</button>`; }).join('');
     return `<div class="${classes.join(' ')}"><span class="day-number">${day.getDate()}</span>${labels}</div>`;
   }).join('');
   document.querySelectorAll('[data-event-id]').forEach((button) => button.addEventListener('click', () => selectEvent(button.dataset.eventId)));
@@ -31,8 +31,7 @@ function selectEvent(id) {
 }
 async function boot() {
   try { const response = await fetch('./data/events.json', { cache: 'no-store' }); const data = await response.json(); state.events = data.events || []; $('#updated').textContent = data.generatedAt ? `마지막 갱신: ${new Date(data.generatedAt).toLocaleString('ko-KR')}` : '갱신 대기 중'; } catch { $('#updated').textContent = '일정 데이터를 불러오지 못했습니다.'; }
-  renderCalendar();
-  const current = isoDay(new Date()); const nearest = state.events.find((event) => event.endDate >= current); if (nearest) selectEvent(nearest.id);
+  const current = isoDay(new Date()); const nearest = state.events.find((event) => event.endDate >= current); if (nearest) { state.date = parseDay(nearest.startDate); selectEvent(nearest.id); } else renderCalendar();
 }
 $('#previous').addEventListener('click', () => { state.date.setMonth(state.date.getMonth() - 1); renderCalendar(); });
 $('#next').addEventListener('click', () => { state.date.setMonth(state.date.getMonth() + 1); renderCalendar(); });
