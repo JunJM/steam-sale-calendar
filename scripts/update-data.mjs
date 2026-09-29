@@ -61,23 +61,18 @@ async function collectFeaturedGames() {
   const featured = JSON.parse(await fetchText(FEATURED_URL)); const candidates = [];
   for (const category of Object.values(featured)) for (const item of category?.items || []) {
     const appId = Number(item.id || String(item.url || '').match(/\/app\/(\d+)/)?.[1]);
-    if (appId && !candidates.some((candidate) => candidate.appId === appId)) candidates.push({ appId, topSellerRank: 1000 + candidates.length + 1 });
+    if (!appId || candidates.some((candidate) => candidate.appId === appId)) continue;
+    const price = Number.isFinite(item.final_price) ? { currency: item.currency || 'KRW', final: item.final_price, discountPercent: item.discount_percent || 0 } : null;
+    candidates.push({ appId, name: item.name || `Steam 게임 ${appId}`, image: item.header_image || `https://cdn.cloudflare.steamstatic.com/steam/apps/${appId}/header.jpg`, genres: [], price, topSellerRank: 1000 + candidates.length + 1 });
   }
-  const games = [];
-  for (let i = 0; i < candidates.length && i < 50; i += 5) {
-    const batch = candidates.slice(i, i + 5); const details = JSON.parse(await fetchText(appDetailsUrl(batch.map((item) => item.appId))));
-    for (const candidate of batch) { const app = details[candidate.appId]?.success && details[candidate.appId].data; if (app?.type === 'game') games.push({ appId: candidate.appId, name: app.name, image: app.header_image, genres: (app.genres || []).map((genre) => genre.description), price: app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null, topSellerRank: candidate.topSellerRank }); }
-  }
-  if (!games.length) throw new Error('Store featured categories yielded no game details');
-  return games;
+  if (!candidates.length) throw new Error('Store featured categories yielded no games');
+  return candidates.slice(0, 50);
 }
 function attachGames(events, games) {
-  return events.map((event) => ({ ...event, gameGroups: event.genres.map((genre) => ({
-    genre,
-    games: games.map((game) => ({ game, topicMatch: game.genres.some((value) => value.toLowerCase().includes(genre.toLowerCase())) }))
-      .sort((a, b) => Number(b.topicMatch) - Number(a.topicMatch) || a.game.topSellerRank - b.game.topSellerRank || (b.game.price?.discountPercent || 0) - (a.game.price?.discountPercent || 0))
-      .slice(0, 5).map(({ game }, index) => ({ ...game, rank: index + 1 })),
-  })) }));
+  return events.map((event) => ({ ...event, gameGroups: [{
+    genre: '추천 할인 게임',
+    games: games.slice().sort((a, b) => a.topSellerRank - b.topSellerRank || (b.price?.discountPercent || 0) - (a.price?.discountPercent || 0)).slice(0, 5).map((game, index) => ({ ...game, rank: index + 1 })),
+  }] }));
 }
 async function readJson(path, fallback) { try { return JSON.parse(await readFile(path, 'utf8')); } catch { return fallback; } }
 function validEvents(events) { return Array.isArray(events) && events.length >= 3 && events.every((event) => event.title.length <= 90 && !/running three times|multi-day celebration/i.test(event.title)); }
