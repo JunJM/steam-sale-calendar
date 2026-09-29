@@ -1,12 +1,173 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-09-29T06:40:43.644Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T06:51:53.016Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
-    "topSellers": "https://store.steampowered.com/charts/topselling/KR/?l=koreana",
+    "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
     "appDetails": "https://store.steampowered.com/api/appdetails?appids=",
-    "rankingSource": "store-featured-fallback"
+    "rankingSource": "top-sellers"
   },
+  "topGames": [
+    {
+      "appId": 578080,
+      "name": "PUBG: BATTLEGROUNDS",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1786493086",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "대규모 멀티플레이어",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 1,
+      "rank": 1
+    },
+    {
+      "appId": 2139460,
+      "name": "Once Human",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/c18b08a2f93dec32fcc5fa71bc2da44ee42de1f0/header.jpg?t=1786675226",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "레이싱",
+        "RPG",
+        "시뮬레이션",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 2,
+      "rank": 2
+    },
+    {
+      "appId": 2288340,
+      "name": "에이스 컴뱃 8: 시브의 날개 (ACE COMBAT 8: WINGS OF THEVE)",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1790651602",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 8980000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 3,
+      "rank": 3
+    },
+    {
+      "appId": 1049590,
+      "name": "이터널 리턴",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049590/72918ebacd0d4f8537969dc8b976ceb98f681cab/header.jpg?t=1789544685",
+      "genres": [],
+      "price": null,
+      "topSellerRank": 4,
+      "rank": 4
+    },
+    {
+      "appId": 1867240,
+      "name": "WARDOGS",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1789503126",
+      "genres": [
+        "액션",
+        "인디",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4727000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 5,
+      "rank": 5
+    },
+    {
+      "appId": 1912410,
+      "name": "Minecraft Dungeons II",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1789572111",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 3480000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 6,
+      "rank": 6
+    },
+    {
+      "appId": 2638890,
+      "name": "귀무자 Way of the Sword",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/ce31174fea86d0bafa21b26e853dcd0b7326e36f/header.jpg?t=1790383151",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 7980000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 7,
+      "rank": 7
+    },
+    {
+      "appId": 4126040,
+      "name": "애니모",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/43b430b83e739f056c7878bf11a6d8a3c1b8bb59/header_koreana.jpg?t=1790595631",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "대규모 멀티플레이어",
+        "RPG",
+        "시뮬레이션",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 8,
+      "rank": 8
+    },
+    {
+      "appId": 1973530,
+      "name": "Limbus Company",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1790559030",
+      "genres": [
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 9,
+      "rank": 9
+    },
+    {
+      "appId": 3564740,
+      "name": "연운",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/1646a998bc0359a3607a96edfae7038767ede17a/header_alt_assets_9_koreana.jpg?t=1790514845",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "캐주얼",
+        "인디",
+        "대규모 멀티플레이어",
+        "레이싱",
+        "RPG",
+        "시뮬레이션",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 10,
+      "rank": 10
+    }
+  ],
+  "topGamesLoadFailed": false,
   "events": [
     {
       "id": "2026-09-14-party-based-rpg-fest",
@@ -17,16 +178,6 @@
       "genres": [
         "RPG",
         "어드벤처"
-      ],
-      "gameGroups": [
-        {
-          "genre": "파티 기반 RPG",
-          "loadFailed": false,
-          "games": []
-        }
-      ],
-      "rankingGroups": [
-        "파티 기반 RPG"
       ]
     },
     {
@@ -37,84 +188,6 @@
       "description": "Steam 공식 가을 할인 행사입니다.",
       "genres": [
         "액션",
-        "인디"
-      ],
-      "gameGroups": [
-        {
-          "genre": "전체 인기 할인",
-          "loadFailed": false,
-          "games": [
-            {
-              "appId": 292030,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/55647077a1dc7429df192ef8b94ed7d84d877834/hero_capsule_2x.jpg?t=1788333513",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1001,
-              "rank": 1
-            },
-            {
-              "appId": 3948120,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/eeff53902ce7b44551b9718f/9d7dbdbe9b936cb966e7320f188ce2d4e5fba89b/vertical_capsule_english.png?t=1790095799",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1002,
-              "rank": 2
-            },
-            {
-              "appId": 3398110,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/e9d00df0c87b203b49410b6a/2cee7d95332190d73b6884c8f0b7ab98a55cc26f/vertical_capsule_english.png?t=1787160850",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1003,
-              "rank": 3
-            },
-            {
-              "appId": 1449110,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/a23cece7f1df89a24e2bf56f932bb135f709303f/hero_capsule_2x.jpg?t=1761760147",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1004,
-              "rank": 4
-            },
-            {
-              "appId": 259680,
-              "name": "Tales of Maj'Eyal",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/259680/header.jpg?t=1790200302",
-              "genres": [],
-              "price": {
-                "currency": "KRW",
-                "final": 375000,
-                "discountPercent": 50
-              },
-              "topSellerRank": 1005,
-              "rank": 5
-            }
-          ]
-        },
-        {
-          "genre": "RPG",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "액션·어드벤처",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "인디",
-          "loadFailed": false,
-          "games": []
-        }
-      ],
-      "rankingGroups": [
-        "전체 인기 할인",
-        "RPG",
-        "액션·어드벤처",
         "인디"
       ]
     },
@@ -127,28 +200,6 @@
       "genres": [
         "시뮬레이션",
         "인디"
-      ],
-      "gameGroups": [
-        {
-          "genre": "요리·식당 경영",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "협동·파티",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "캐주얼",
-          "loadFailed": false,
-          "games": []
-        }
-      ],
-      "rankingGroups": [
-        "요리·식당 경영",
-        "협동·파티",
-        "캐주얼"
       ]
     },
     {
@@ -160,84 +211,6 @@
       "genres": [
         "인디",
         "어드벤처"
-      ],
-      "gameGroups": [
-        {
-          "genre": "데모 인기작",
-          "loadFailed": false,
-          "games": [
-            {
-              "appId": 292030,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/55647077a1dc7429df192ef8b94ed7d84d877834/hero_capsule_2x.jpg?t=1788333513",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1001,
-              "rank": 1
-            },
-            {
-              "appId": 3948120,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/eeff53902ce7b44551b9718f/9d7dbdbe9b936cb966e7320f188ce2d4e5fba89b/vertical_capsule_english.png?t=1790095799",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1002,
-              "rank": 2
-            },
-            {
-              "appId": 3398110,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/e9d00df0c87b203b49410b6a/2cee7d95332190d73b6884c8f0b7ab98a55cc26f/vertical_capsule_english.png?t=1787160850",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1003,
-              "rank": 3
-            },
-            {
-              "appId": 1449110,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/a23cece7f1df89a24e2bf56f932bb135f709303f/hero_capsule_2x.jpg?t=1761760147",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1004,
-              "rank": 4
-            },
-            {
-              "appId": 259680,
-              "name": "Tales of Maj'Eyal",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/259680/header.jpg?t=1790200302",
-              "genres": [],
-              "price": {
-                "currency": "KRW",
-                "final": 375000,
-                "discountPercent": 50
-              },
-              "topSellerRank": 1005,
-              "rank": 5
-            }
-          ]
-        },
-        {
-          "genre": "액션",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "RPG",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "인디",
-          "loadFailed": false,
-          "games": []
-        }
-      ],
-      "rankingGroups": [
-        "데모 인기작",
-        "액션",
-        "RPG",
-        "인디"
       ]
     },
     {
@@ -249,28 +222,6 @@
       "genres": [
         "액션",
         "어드벤처"
-      ],
-      "gameGroups": [
-        {
-          "genre": "공포",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "생존 공포",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "협동 공포",
-          "loadFailed": false,
-          "games": []
-        }
-      ],
-      "rankingGroups": [
-        "공포",
-        "생존 공포",
-        "협동 공포"
       ]
     },
     {
@@ -282,28 +233,6 @@
       "genres": [
         "RPG",
         "전략"
-      ],
-      "gameGroups": [
-        {
-          "genre": "오토배틀러",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "덱빌딩·로그라이크",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "전략 RPG",
-          "loadFailed": false,
-          "games": []
-        }
-      ],
-      "rankingGroups": [
-        "오토배틀러",
-        "덱빌딩·로그라이크",
-        "전략 RPG"
       ]
     },
     {
@@ -314,84 +243,6 @@
       "description": "Steam 공식 겨울 할인 행사입니다.",
       "genres": [
         "액션",
-        "인디"
-      ],
-      "gameGroups": [
-        {
-          "genre": "전체 인기 할인",
-          "loadFailed": false,
-          "games": [
-            {
-              "appId": 292030,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/55647077a1dc7429df192ef8b94ed7d84d877834/hero_capsule_2x.jpg?t=1788333513",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1001,
-              "rank": 1
-            },
-            {
-              "appId": 3948120,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/eeff53902ce7b44551b9718f/9d7dbdbe9b936cb966e7320f188ce2d4e5fba89b/vertical_capsule_english.png?t=1790095799",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1002,
-              "rank": 2
-            },
-            {
-              "appId": 3398110,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/spotlights/e9d00df0c87b203b49410b6a/2cee7d95332190d73b6884c8f0b7ab98a55cc26f/vertical_capsule_english.png?t=1787160850",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1003,
-              "rank": 3
-            },
-            {
-              "appId": 1449110,
-              "name": "주중 특가",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449110/a23cece7f1df89a24e2bf56f932bb135f709303f/hero_capsule_2x.jpg?t=1761760147",
-              "genres": [],
-              "price": null,
-              "topSellerRank": 1004,
-              "rank": 4
-            },
-            {
-              "appId": 259680,
-              "name": "Tales of Maj'Eyal",
-              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/259680/header.jpg?t=1790200302",
-              "genres": [],
-              "price": {
-                "currency": "KRW",
-                "final": 375000,
-                "discountPercent": 50
-              },
-              "topSellerRank": 1005,
-              "rank": 5
-            }
-          ]
-        },
-        {
-          "genre": "RPG",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "액션·어드벤처",
-          "loadFailed": false,
-          "games": []
-        },
-        {
-          "genre": "인디",
-          "loadFailed": false,
-          "games": []
-        }
-      ],
-      "rankingGroups": [
-        "전체 인기 할인",
-        "RPG",
-        "액션·어드벤처",
         "인디"
       ]
     }

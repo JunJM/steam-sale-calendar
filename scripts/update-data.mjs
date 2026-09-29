@@ -6,8 +6,8 @@ const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const OUTPUT = resolve(ROOT, 'data/events.json');
 const STATIC_EVENTS = resolve(ROOT, 'data/events.static.json');
 const UPCOMING_EVENTS_URL = 'https://partner.steamgames.com/doc/marketing/upcoming_events';
-const TOP_SELLERS_URL = 'https://store.steampowered.com/charts/topselling/KR/?l=koreana';
-const FEATURED_URL = 'https://store.steampowered.com/api/featuredcategories/?cc=kr&l=koreana';
+const TOP_SELLERS_URL = 'https://store.steampowered.com/charts/topselling/?l=english';
+const FEATURED_URL = 'https://store.steampowered.com/api/featuredcategories/?l=english';
 const APPDETAILS_URL = 'https://store.steampowered.com/api/appdetails?appids=';
 const FETCH_OPTIONS = { headers: { 'user-agent': 'steam-sale-calendar/1.0 (GitHub Actions; low-frequency public data collector)', accept: 'text/html,application/json' } };
 const MONTHS = Object.fromEntries(['january','february','march','april','may','june','july','august','september','october','november','december'].map((m, i) => [m, i]));
@@ -41,20 +41,18 @@ function topSellerCandidates(html) {
   const ids = [];
   for (const match of matches) { const appId = Number(match[1]); if (appId && !ids.includes(appId)) ids.push(appId); }
   if (ids.length < 20) throw new Error(`Top Sellers chart yielded only ${ids.length} app links`);
-  return ids.slice(0, 50).map((appId, index) => ({ appId, topSellerRank: index + 1 }));
+  return ids.slice(0, 10).map((appId, index) => ({ appId, topSellerRank: index + 1 }));
 }
 async function collectTopSellerGames() {
   const candidates = topSellerCandidates(await fetchText(TOP_SELLERS_URL)); const games = [];
-  for (let i = 0; i < candidates.length; i += 5) {
-    const batch = candidates.slice(i, i + 5);
-    const details = JSON.parse(await fetchText(appDetailsUrl(batch.map((item) => item.appId))));
-    for (const candidate of batch) {
-      const result = details[candidate.appId]; const app = result?.success && result.data;
-      if (!app || app.type !== 'game') continue;
-      const price = app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null;
-      games.push({ appId: candidate.appId, name: app.name, image: app.header_image, genres: (app.genres || []).map((g) => g.description), price, topSellerRank: candidate.topSellerRank });
-    }
+  for (const candidate of candidates) {
+    const details = JSON.parse(await fetchText(appDetailsUrl([candidate.appId])));
+    const result = details[candidate.appId]; const app = result?.success && result.data;
+    if (!app || app.type !== 'game') continue;
+    const price = app.price_overview ? { currency: app.price_overview.currency, final: app.price_overview.final, discountPercent: app.price_overview.discount_percent } : null;
+    games.push({ appId: candidate.appId, name: app.name, image: app.header_image, genres: (app.genres || []).map((g) => g.description), price, topSellerRank: candidate.topSellerRank });
   }
+  if (!games.length) throw new Error('Top Sellers details yielded no games');
   return games;
 }
 async function collectFeaturedGames() {
@@ -68,26 +66,8 @@ async function collectFeaturedGames() {
   if (!candidates.length) throw new Error('Store featured categories yielded no games');
   return candidates.slice(0, 50);
 }
-const RANKING_GROUPS = {
-  'party-based-rpg': [{ genre: '파티 기반 RPG', genres: ['RPG'] }],
-  'autumn-sale': [{ genre: '전체 인기 할인', all: true }, { genre: 'RPG', genres: ['RPG'] }, { genre: '액션·어드벤처', genres: ['Action', 'Adventure'] }, { genre: '인디', genres: ['Indie'] }],
-  'cooking-fest': [{ genre: '요리·식당 경영', genres: ['Simulation'] }, { genre: '협동·파티', genres: ['Casual'] }, { genre: '캐주얼', genres: ['Casual'] }],
-  'next-fest': [{ genre: '데모 인기작', all: true }, { genre: '액션', genres: ['Action'] }, { genre: 'RPG', genres: ['RPG'] }, { genre: '인디', genres: ['Indie'] }],
-  'steam-scream': [{ genre: '공포', genres: [] }, { genre: '생존 공포', genres: [] }, { genre: '협동 공포', genres: [] }],
-  'auto-battler-rpg': [{ genre: '오토배틀러', genres: ['Strategy'] }, { genre: '덱빌딩·로그라이크', genres: [] }, { genre: '전략 RPG', genres: ['Strategy', 'RPG'] }],
-  'winter-sale': [{ genre: '전체 인기 할인', all: true }, { genre: 'RPG', genres: ['RPG'] }, { genre: '액션·어드벤처', genres: ['Action', 'Adventure'] }, { genre: '인디', genres: ['Indie'] }],
-};
-function rankingGroupsFor(event) { const key = Object.keys(RANKING_GROUPS).find((name) => event.id.includes(name)); return key ? RANKING_GROUPS[key] : [{ genre: '추천 할인 게임', all: true }]; }
-function sortAndRank(games) { return games.slice().sort((a, b) => a.topSellerRank - b.topSellerRank || (b.price?.discountPercent || 0) - (a.price?.discountPercent || 0)).slice(0, 5).map((game, index) => ({ ...game, rank: index + 1 })); }
-function attachGames(events, games, loadFailed = false) {
-  return events.map((event) => {
-    const rankingGroups = rankingGroupsFor(event);
-    return { ...event, rankingGroups: rankingGroups.map(({ genre }) => genre), gameGroups: rankingGroups.map((group) => {
-      const matching = group.all ? games : group.genres.length ? games.filter((game) => group.genres.every((genre) => game.genres?.includes(genre))) : [];
-      return { genre: group.genre, loadFailed, games: loadFailed ? [] : sortAndRank(matching) };
-    }) };
-  });
-}
+function rankGames(games, limit) { return games.slice().sort((a, b) => a.topSellerRank - b.topSellerRank || (b.price?.discountPercent || 0) - (a.price?.discountPercent || 0)).slice(0, limit).map((game, index) => ({ ...game, rank: index + 1 })); }
+function cleanEvents(events) { return events.map(({ gameGroups, rankingGroups, ...event }) => event); }
 async function readJson(path, fallback) { try { return JSON.parse(await readFile(path, 'utf8')); } catch { return fallback; } }
 function validEvents(events) { return Array.isArray(events) && events.length >= 3 && events.every((event) => event.title.length <= 90 && !/running three times|multi-day celebration/i.test(event.title)); }
 async function main() {
@@ -98,7 +78,7 @@ async function main() {
     console.warn(`Top Sellers collection failed; using Store featured fallback: ${error.message}`);
     try { games = await collectFeaturedGames(); rankingSource = 'store-featured-fallback'; } catch (fallbackError) { console.warn(`Store featured fallback failed: ${fallbackError.message}`); rankingSource = 'unavailable'; gameLoadFailed = true; }
   }
-  const data = { schemaVersion: 1, generatedAt: new Date().toISOString(), source: { upcomingEvents: UPCOMING_EVENTS_URL, topSellers: TOP_SELLERS_URL, appDetails: APPDETAILS_URL, rankingSource }, events: attachGames(events, games, gameLoadFailed) };
+  const data = { schemaVersion: 2, generatedAt: new Date().toISOString(), source: { upcomingEvents: UPCOMING_EVENTS_URL, topSellers: TOP_SELLERS_URL, appDetails: APPDETAILS_URL, rankingSource }, topGames: gameLoadFailed ? [] : rankGames(games, 10), topGamesLoadFailed: gameLoadFailed, events: cleanEvents(events) };
   await mkdir(dirname(OUTPUT), { recursive: true }); const temporary = `${OUTPUT}.tmp`; await writeFile(temporary, `${JSON.stringify(data, null, 2)}\n`); await rename(temporary, OUTPUT); console.log(`Wrote ${data.events.length} events.`);
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((error) => { console.error(error); process.exitCode = 1; });

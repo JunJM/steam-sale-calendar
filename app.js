@@ -1,4 +1,4 @@
-const state = { date: new Date(), events: [], selectedId: null };
+const state = { date: new Date(), events: [], selectedId: null, topGames: [], topGamesLoadFailed: false, rankingSource: '' };
 const $ = (selector) => document.querySelector(selector);
 const dateFormat = new Intl.DateTimeFormat('ko-KR', { month: 'long', day: 'numeric' });
 const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
@@ -24,13 +24,19 @@ function renderCalendar() {
 }
 
 function money(game) { if (!game.price) return '가격 정보 없음'; const currency = game.price.currency || 'KRW'; const current = new Intl.NumberFormat('ko-KR', { style: 'currency', currency, maximumFractionDigits: 0 }).format(game.price.final / 100); return game.price.discountPercent ? `<span class="discount">-${game.price.discountPercent}%</span>${current}` : current; }
+function renderTopGames() {
+  if (state.topGamesLoadFailed) return '<p class="no-games failed">(불러오기 실패)</p>';
+  if (!state.topGames.length) return '<p class="no-games">인기 게임 정보를 준비 중입니다.</p>';
+  return state.topGames.map((game, index) => { const rank = game.rank || index + 1; const url = `https://store.steampowered.com/app/${Number(game.appId)}/?l=koreana`; return `<article class="game"><span class="rank" aria-label="${rank}위">${rank}</span><a class="game-cover" href="${url}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(game.name)} Steam Store 열기"><img src="${escapeHtml(game.image)}" alt="${escapeHtml(game.name)}" loading="lazy"></a><a class="game-name" href="${url}" target="_blank" rel="noreferrer">${escapeHtml(game.name)}</a><span class="price">${money(game)}</span></article>`; }).join('');
+}
 function selectEvent(id) {
   state.selectedId = id; const event = state.events.find((item) => item.id === id); if (!event) return;
-  $('#detail').innerHTML = `<h2 class="event-title">${escapeHtml(event.title)}</h2><p class="period">${formatPeriod(event)}</p><p class="description">${escapeHtml(event.description || 'Steam 공식 예정 행사입니다. 할인 대상과 세부 내용은 행사 시작 시 Steam Store에서 확인할 수 있습니다.')}</p>${(event.gameGroups || []).map((group) => `<section class="genre"><h3>${escapeHtml(group.genre)} TOP 5</h3><p class="ranking-note">Steam Store의 현재 할인 및 인기 노출 정보를 기준으로 정렬합니다.</p><div class="game-list">${group.games?.length ? group.games.map((game, index) => { const rank = game.rank || index + 1; const url = `https://store.steampowered.com/app/${Number(game.appId)}/?l=koreana`; return `<article class="game"><span class="rank" aria-label="${rank}위">${rank}</span><a class="game-cover" href="${url}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(game.name)} Steam Store 열기"><img src="${escapeHtml(game.image)}" alt="${escapeHtml(game.name)}" loading="lazy"></a><a class="game-name" href="${url}" target="_blank" rel="noreferrer">${escapeHtml(game.name)}</a><span class="price">${money(game)}</span></article>`; }).join('') : group.loadFailed ? '<p class="no-games failed">(불러오기 실패)</p>' : '<p class="no-games">현재 순위에서 이 분류에 맞는 게임을 찾지 못했습니다.</p>'}</div></section>`).join('')}`;
+  const sourceNote = state.rankingSource === 'top-sellers' ? 'Steam 전 세계 판매 순위 기준' : 'Steam 공개 추천 목록 기준';
+  $('#detail').innerHTML = `<section class="event-summary"><h2 class="event-title">${escapeHtml(event.title)}</h2><p class="period">${formatPeriod(event)}</p><p class="description">${escapeHtml(event.description || 'Steam 공식 예정 행사입니다. 할인 대상과 세부 내용은 행사 시작 시 Steam Store에서 확인할 수 있습니다.')}</p></section><section class="world-ranking"><div class="ranking-heading"><h3>전 세계 인기 게임 TOP 10</h3><p class="ranking-note">${sourceNote}</p></div><div class="game-list">${renderTopGames()}</div></section>`;
   renderCalendar();
 }
 async function boot() {
-  try { const response = await fetch('./data/events.json', { cache: 'no-store' }); const data = await response.json(); state.events = data.events || []; $('#updated').textContent = data.generatedAt ? `마지막 갱신: ${new Date(data.generatedAt).toLocaleString('ko-KR')}` : '갱신 대기 중'; } catch { $('#updated').textContent = '일정 데이터를 불러오지 못했습니다.'; }
+  try { const response = await fetch('./data/events.json', { cache: 'no-store' }); const data = await response.json(); state.events = data.events || []; state.topGames = data.topGames || []; state.topGamesLoadFailed = Boolean(data.topGamesLoadFailed); state.rankingSource = data.source?.rankingSource || ''; $('#updated').textContent = data.generatedAt ? `마지막 갱신: ${new Date(data.generatedAt).toLocaleString('ko-KR')}` : '갱신 대기 중'; } catch { $('#updated').textContent = '일정 데이터를 불러오지 못했습니다.'; }
   const current = isoDay(new Date()); const nearest = state.events.find((event) => event.endDate >= current); if (nearest) { state.date = parseDay(nearest.startDate); selectEvent(nearest.id); } else renderCalendar();
 }
 $('#previous').addEventListener('click', () => { state.date.setMonth(state.date.getMonth() - 1); renderCalendar(); });
