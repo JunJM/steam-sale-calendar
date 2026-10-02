@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T08:59:14.657Z",
+  "generatedAt": "2026-10-02T08:34:56.198Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,23 +9,25 @@
   },
   "topGames": [
     {
-      "appId": 3513350,
-      "name": "Wuthering Waves",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/bc5f8263acb7a97f033ea92cad07c0fedd992b6f/header_koreana.jpg?t=1790713386",
+      "appId": 3010850,
+      "name": "Gears of War: E-Day",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
       "genres": [
         "액션",
-        "어드벤처",
-        "RPG",
-        "무료 플레이"
+        "어드벤처"
       ],
-      "price": null,
-      "topSellerRank": 2,
+      "price": {
+        "currency": "KRW",
+        "final": 7980000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 1,
       "rank": 1
     },
     {
       "appId": 2288340,
       "name": "에이스 컴뱃 8: 시브의 날개 (ACE COMBAT 8: WINGS OF THEVE)",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1790763244",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1790908088",
       "genres": [
         "액션"
       ],
@@ -34,7 +36,7 @@
         "final": 8980000,
         "discountPercent": 0
       },
-      "topSellerRank": 3,
+      "topSellerRank": 2,
       "rank": 2
     },
     {
@@ -50,42 +52,9 @@
       "rank": 3
     },
     {
-      "appId": 3010850,
-      "name": "Gears of War: E-Day",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1789676311",
-      "genres": [
-        "액션",
-        "어드벤처"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 7980000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 5,
-      "rank": 4
-    },
-    {
-      "appId": 4126040,
-      "name": "애니모",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/43b430b83e739f056c7878bf11a6d8a3c1b8bb59/header_koreana.jpg?t=1790595631",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 6,
-      "rank": 5
-    },
-    {
-      "appId": 1912410,
-      "name": "Minecraft Dungeons II",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1790774234",
+      "appId": 2183900,
+      "name": "Warhammer 40,000: Space Marine 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/0725a80b89ba198f406081ad66a7c42e3db46cb4/header_alt_assets_14_koreana.jpg?t=1790874369",
       "genres": [
         "액션",
         "어드벤처",
@@ -93,9 +62,41 @@
       ],
       "price": {
         "currency": "KRW",
-        "final": 3480000,
-        "discountPercent": 0
+        "final": 1745000,
+        "discountPercent": 75
       },
+      "topSellerRank": 5,
+      "rank": 4
+    },
+    {
+      "appId": 3513350,
+      "name": "Wuthering Waves",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/bc5f8263acb7a97f033ea92cad07c0fedd992b6f/header_koreana.jpg?t=1790713386",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "RPG",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
+      "appId": 2767030,
+      "name": "마블 라이벌즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/088fc787d8513a6f9782d03968e5ac1a01840087/header.jpg?t=1789119923",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "레이싱",
+        "RPG",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
       "topSellerRank": 7,
       "rank": 6
     },
@@ -119,35 +120,33 @@
       "rank": 7
     },
     {
-      "appId": 1158310,
-      "name": "Crusader Kings III",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/c218ce511565fb3db082fc2ab438f9d5beadc6bc/header_alt_assets_13_koreana.jpg?t=1790773064",
+      "appId": 4126040,
+      "name": "애니모",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/43b430b83e739f056c7878bf11a6d8a3c1b8bb59/header_koreana.jpg?t=1790849962",
       "genres": [
+        "액션",
+        "어드벤처",
+        "대규모 멀티플레이어",
         "RPG",
         "시뮬레이션",
-        "전략"
+        "전략",
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 5500000,
-        "discountPercent": 0
-      },
+      "price": null,
       "topSellerRank": 9,
       "rank": 8
     },
     {
-      "appId": 1488490,
-      "name": "니발리스 나이트 Nivalis Nights",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488490/28e511ff46672f9649744961fd6edbf19df75265/header.jpg?t=1790694813",
+      "appId": 1091500,
+      "name": "Cyberpunk 2077",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/26b96fa9c8af43189cbecbbc329ade29d9c9cf3e/header_koreana.jpg?t=1784714077",
       "genres": [
-        "어드벤처",
-        "RPG",
-        "시뮬레이션"
+        "RPG"
       ],
       "price": {
         "currency": "KRW",
-        "final": 2385000,
-        "discountPercent": 10
+        "final": 1980000,
+        "discountPercent": 70
       },
       "topSellerRank": 10,
       "rank": 9
