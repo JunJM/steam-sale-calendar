@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-03T08:09:56.427Z",
+  "generatedAt": "2026-10-04T08:28:52.007Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -8,6 +8,18 @@
     "rankingSource": "top-sellers"
   },
   "topGames": [
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 2,
+      "rank": 1
+    },
     {
       "appId": 3010850,
       "name": "Gears of War: E-Day",
@@ -21,35 +33,8 @@
         "final": 7980000,
         "discountPercent": 0
       },
-      "topSellerRank": 1,
-      "rank": 1
-    },
-    {
-      "appId": 2288340,
-      "name": "에이스 컴뱃 8: 시브의 날개 (ACE COMBAT 8: WINGS OF THEVE)",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1790908088",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 8980000,
-        "discountPercent": 0
-      },
       "topSellerRank": 3,
       "rank": 2
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 4,
-      "rank": 3
     },
     {
       "appId": 1867240,
@@ -67,8 +52,39 @@
         "final": 4727000,
         "discountPercent": 0
       },
+      "topSellerRank": 4,
+      "rank": 3
+    },
+    {
+      "appId": 2288340,
+      "name": "에이스 컴뱃 8: 시브의 날개 (ACE COMBAT 8: WINGS OF THEVE)",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1790908088",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 8980000,
+        "discountPercent": 0
+      },
       "topSellerRank": 5,
       "rank": 4
+    },
+    {
+      "appId": 4019220,
+      "name": "Dressmaker",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1790947386",
+      "genres": [
+        "캐주얼",
+        "시뮬레이션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 1600000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 6,
+      "rank": 5
     },
     {
       "appId": 1091500,
@@ -82,25 +98,21 @@
         "final": 1980000,
         "discountPercent": 70
       },
-      "topSellerRank": 6,
-      "rank": 5
+      "topSellerRank": 7,
+      "rank": 6
     },
     {
-      "appId": 2183900,
-      "name": "Warhammer 40,000: Space Marine 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/0725a80b89ba198f406081ad66a7c42e3db46cb4/header_alt_assets_14_koreana.jpg?t=1790874369",
+      "appId": 1085660,
+      "name": "데스티니 가디언즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/34e901dac9d959129d25c4b7ae8def80df99827e/header_koreana.jpg?t=1781815889",
       "genres": [
         "액션",
         "어드벤처",
-        "RPG"
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 1745000,
-        "discountPercent": 75
-      },
-      "topSellerRank": 7,
-      "rank": 6
+      "price": null,
+      "topSellerRank": 8,
+      "rank": 7
     },
     {
       "appId": 2767030,
@@ -117,35 +129,20 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 1085660,
-      "name": "데스티니 가디언즈",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/34e901dac9d959129d25c4b7ae8def80df99827e/header_koreana.jpg?t=1781815889",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "무료 플레이"
-      ],
-      "price": null,
       "topSellerRank": 9,
       "rank": 8
     },
     {
-      "appId": 4019220,
-      "name": "Dressmaker",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1790947386",
+      "appId": 3513350,
+      "name": "Wuthering Waves",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/bc5f8263acb7a97f033ea92cad07c0fedd992b6f/header_koreana.jpg?t=1790713386",
       "genres": [
-        "캐주얼",
-        "시뮬레이션"
+        "액션",
+        "어드벤처",
+        "RPG",
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 1600000,
-        "discountPercent": 0
-      },
+      "price": null,
       "topSellerRank": 10,
       "rank": 9
     }
