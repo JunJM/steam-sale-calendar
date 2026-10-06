@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T09:08:11.077Z",
+  "generatedAt": "2026-10-06T09:01:23.856Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,35 +9,23 @@
   },
   "topGames": [
     {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
+      "appId": 4078430,
+      "name": "스타워즈: 은하계 레이서™",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1791277109",
       "genres": [
         "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 2,
-      "rank": 1
-    },
-    {
-      "appId": 1867240,
-      "name": "WARDOGS",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1790774170",
-      "genres": [
-        "액션",
-        "인디",
-        "대규모 멀티플레이어",
+        "어드벤처",
+        "레이싱",
         "시뮬레이션",
-        "앞서 해보기"
+        "스포츠"
       ],
       "price": {
         "currency": "KRW",
-        "final": 4727000,
+        "final": 6450000,
         "discountPercent": 0
       },
-      "topSellerRank": 3,
-      "rank": 2
+      "topSellerRank": 2,
+      "rank": 1
     },
     {
       "appId": 3010850,
@@ -52,6 +40,18 @@
         "final": 7980000,
         "discountPercent": 0
       },
+      "topSellerRank": 3,
+      "rank": 2
+    },
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
       "topSellerRank": 4,
       "rank": 3
     },
@@ -72,9 +72,28 @@
       "rank": 4
     },
     {
+      "appId": 1867240,
+      "name": "WARDOGS",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1790774170",
+      "genres": [
+        "액션",
+        "인디",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4727000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
       "appId": 2288340,
       "name": "에이스 컴뱃 8: 시브의 날개 (ACE COMBAT 8: WINGS OF THEVE)",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1790908088",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1791249082",
       "genres": [
         "액션"
       ],
@@ -83,22 +102,25 @@
         "final": 8980000,
         "discountPercent": 0
       },
-      "topSellerRank": 6,
-      "rank": 5
+      "topSellerRank": 7,
+      "rank": 6
     },
     {
-      "appId": 3513350,
-      "name": "Wuthering Waves",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/bc5f8263acb7a97f033ea92cad07c0fedd992b6f/header_koreana.jpg?t=1790713386",
+      "appId": 4126040,
+      "name": "애니모",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/43b430b83e739f056c7878bf11a6d8a3c1b8bb59/header_koreana.jpg?t=1790849962",
       "genres": [
         "액션",
         "어드벤처",
+        "대규모 멀티플레이어",
         "RPG",
+        "시뮬레이션",
+        "전략",
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 7,
-      "rank": 6
+      "topSellerRank": 8,
+      "rank": 7
     },
     {
       "appId": 1091500,
@@ -112,39 +134,16 @@
         "final": 1980000,
         "discountPercent": 70
       },
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 4078430,
-      "name": "스타워즈: 은하계 레이서™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1790098978",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "레이싱",
-        "시뮬레이션",
-        "스포츠"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6450000,
-        "discountPercent": 0
-      },
       "topSellerRank": 9,
       "rank": 8
     },
     {
-      "appId": 4126040,
-      "name": "애니모",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/43b430b83e739f056c7878bf11a6d8a3c1b8bb59/header_koreana.jpg?t=1790849962",
+      "appId": 1085660,
+      "name": "데스티니 가디언즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/34e901dac9d959129d25c4b7ae8def80df99827e/header_koreana.jpg?t=1781815889",
       "genres": [
         "액션",
         "어드벤처",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "전략",
         "무료 플레이"
       ],
       "price": null,
