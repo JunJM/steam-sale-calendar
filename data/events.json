@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-06T09:01:23.856Z",
+  "generatedAt": "2026-10-07T08:42:57.126Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,9 +9,38 @@
   },
   "topGames": [
     {
+      "appId": 570,
+      "name": "Dota 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1769535998",
+      "genres": [
+        "액션",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 1,
+      "rank": 1
+    },
+    {
+      "appId": 3010850,
+      "name": "Gears of War: E-Day",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1791309192",
+      "genres": [
+        "액션",
+        "어드벤처"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 7980000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 2,
+      "rank": 2
+    },
+    {
       "appId": 4078430,
       "name": "스타워즈: 은하계 레이서™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1791277109",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1791300714",
       "genres": [
         "액션",
         "어드벤처",
@@ -24,24 +53,23 @@
         "final": 6450000,
         "discountPercent": 0
       },
-      "topSellerRank": 2,
-      "rank": 1
+      "topSellerRank": 3,
+      "rank": 3
     },
     {
-      "appId": 3010850,
-      "name": "Gears of War: E-Day",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
+      "appId": 381210,
+      "name": "Dead by Daylight",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/23fed9f741423413769ad1617e41519d1a466cdc/header_alt_assets_10.jpg?t=1791302579",
       "genres": [
-        "액션",
-        "어드벤처"
+        "액션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 7980000,
-        "discountPercent": 0
+        "final": 860000,
+        "discountPercent": 60
       },
-      "topSellerRank": 3,
-      "rank": 2
+      "topSellerRank": 6,
+      "rank": 4
     },
     {
       "appId": 730,
@@ -52,8 +80,8 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 4,
-      "rank": 3
+      "topSellerRank": 7,
+      "rank": 5
     },
     {
       "appId": 4019220,
@@ -68,87 +96,24 @@
         "final": 1600000,
         "discountPercent": 0
       },
-      "topSellerRank": 5,
-      "rank": 4
-    },
-    {
-      "appId": 1867240,
-      "name": "WARDOGS",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1790774170",
-      "genres": [
-        "액션",
-        "인디",
-        "대규모 멀티플레이어",
-        "시뮬레이션",
-        "앞서 해보기"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4727000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 6,
-      "rank": 5
-    },
-    {
-      "appId": 2288340,
-      "name": "에이스 컴뱃 8: 시브의 날개 (ACE COMBAT 8: WINGS OF THEVE)",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1791249082",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 8980000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 7,
+      "topSellerRank": 9,
       "rank": 6
     },
     {
-      "appId": 4126040,
-      "name": "애니모",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/43b430b83e739f056c7878bf11a6d8a3c1b8bb59/header_koreana.jpg?t=1790849962",
+      "appId": 784080,
+      "name": "MechWarrior 5: Mercenaries",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/784080/33d11250c669e8c755c12678d1ef401e70e1c4a5/header.jpg?t=1791309626",
       "genres": [
         "액션",
-        "어드벤처",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 1091500,
-      "name": "Cyberpunk 2077",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/26b96fa9c8af43189cbecbbc329ade29d9c9cf3e/header_koreana.jpg?t=1784714077",
-      "genres": [
-        "RPG"
+        "시뮬레이션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 1980000,
-        "discountPercent": 70
+        "final": 775000,
+        "discountPercent": 75
       },
-      "topSellerRank": 9,
-      "rank": 8
-    },
-    {
-      "appId": 1085660,
-      "name": "데스티니 가디언즈",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/34e901dac9d959129d25c4b7ae8def80df99827e/header_koreana.jpg?t=1781815889",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "무료 플레이"
-      ],
-      "price": null,
       "topSellerRank": 10,
-      "rank": 9
+      "rank": 7
     }
   ],
   "topGamesLoadFailed": false,
