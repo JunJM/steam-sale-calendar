@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T09:01:33.535Z",
+  "generatedAt": "2026-10-09T09:08:39.709Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,15 +9,18 @@
   },
   "topGames": [
     {
-      "appId": 570,
-      "name": "Dota 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
+      "appId": 632360,
+      "name": "Risk of Rain 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632360/77f4cff7fea7de8a4566d1fb76ace16967604da7/header_alt_assets_7.jpg?t=1791475448",
       "genres": [
         "액션",
-        "전략",
-        "무료 플레이"
+        "인디"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 858000,
+        "discountPercent": 67
+      },
       "topSellerRank": 1,
       "rank": 1
     },
@@ -41,20 +44,32 @@
       "rank": 2
     },
     {
-      "appId": 3010850,
-      "name": "Gears of War: E-Day",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1791405196",
+      "appId": 1808500,
+      "name": "ARC Raiders",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
       "genres": [
-        "액션",
-        "어드벤처"
+        "액션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 7980000,
-        "discountPercent": 0
+        "final": 3045000,
+        "discountPercent": 50
       },
       "topSellerRank": 4,
       "rank": 3
+    },
+    {
+      "appId": 570,
+      "name": "Dota 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
+      "genres": [
+        "액션",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 5,
+      "rank": 4
     },
     {
       "appId": 730,
@@ -65,35 +80,20 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 5,
-      "rank": 4
+      "topSellerRank": 6,
+      "rank": 5
     },
     {
-      "appId": 381210,
-      "name": "Dead by Daylight",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/23fed9f741423413769ad1617e41519d1a466cdc/header_alt_assets_10.jpg?t=1791302579",
+      "appId": 1551980,
+      "name": "Clive Barker's Hellraiser: Revival",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551980/d1e7111b93b6a8b3eb029908887648348c2c55e6/header.jpg?t=1791462446",
       "genres": [
         "액션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 860000,
-        "discountPercent": 60
-      },
-      "topSellerRank": 7,
-      "rank": 5
-    },
-    {
-      "appId": 1091500,
-      "name": "Cyberpunk 2077",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/26b96fa9c8af43189cbecbbc329ade29d9c9cf3e/header_koreana.jpg?t=1784714077",
-      "genres": [
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 1980000,
-        "discountPercent": 70
+        "final": 4790000,
+        "discountPercent": 0
       },
       "topSellerRank": 8,
       "rank": 6
@@ -101,7 +101,7 @@
     {
       "appId": 2054970,
       "name": "Dragon's Dogma 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2054970/header.jpg?t=1788308490",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2054970/header.jpg?t=1791504871",
       "genres": [
         "액션",
         "RPG"
@@ -111,7 +111,7 @@
         "final": 4580000,
         "discountPercent": 0
       },
-      "topSellerRank": 9,
+      "topSellerRank": 10,
       "rank": 7
     }
   ],
