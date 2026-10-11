@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T08:32:10.954Z",
+  "generatedAt": "2026-10-11T08:56:09.108Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -28,6 +28,18 @@
       "rank": 1
     },
     {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 3,
+      "rank": 2
+    },
+    {
       "appId": 632360,
       "name": "Risk of Rain 2",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632360/77f4cff7fea7de8a4566d1fb76ace16967604da7/header_alt_assets_7.jpg?t=1791475448",
@@ -40,33 +52,8 @@
         "final": 858000,
         "discountPercent": 67
       },
-      "topSellerRank": 3,
-      "rank": 2
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
       "topSellerRank": 4,
       "rank": 3
-    },
-    {
-      "appId": 570,
-      "name": "Dota 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
-      "genres": [
-        "액션",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 5,
-      "rank": 4
     },
     {
       "appId": 3010850,
@@ -81,26 +68,21 @@
         "final": 7980000,
         "discountPercent": 0
       },
-      "topSellerRank": 7,
-      "rank": 5
+      "topSellerRank": 5,
+      "rank": 4
     },
     {
-      "appId": 2767030,
-      "name": "마블 라이벌즈",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1791536405",
+      "appId": 570,
+      "name": "Dota 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
       "genres": [
         "액션",
-        "어드벤처",
-        "캐주얼",
-        "대규모 멀티플레이어",
-        "레이싱",
-        "RPG",
         "전략",
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 8,
-      "rank": 6
+      "topSellerRank": 6,
+      "rank": 5
     },
     {
       "appId": 1551980,
@@ -114,8 +96,42 @@
         "final": 4790000,
         "discountPercent": 0
       },
+      "topSellerRank": 8,
+      "rank": 6
+    },
+    {
+      "appId": 1808500,
+      "name": "ARC Raiders",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 3045000,
+        "discountPercent": 50
+      },
       "topSellerRank": 9,
       "rank": 7
+    },
+    {
+      "appId": 1867240,
+      "name": "WARDOGS",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1790774170",
+      "genres": [
+        "액션",
+        "인디",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4727000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 10,
+      "rank": 8
     }
   ],
   "topGamesLoadFailed": false,
