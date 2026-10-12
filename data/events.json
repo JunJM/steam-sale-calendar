@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-11T08:56:09.108Z",
+  "generatedAt": "2026-10-12T09:16:18.218Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -24,7 +24,7 @@
         "final": 6450000,
         "discountPercent": 0
       },
-      "topSellerRank": 1,
+      "topSellerRank": 2,
       "rank": 1
     },
     {
@@ -56,6 +56,21 @@
       "rank": 3
     },
     {
+      "appId": 1808500,
+      "name": "ARC Raiders",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 3045000,
+        "discountPercent": 50
+      },
+      "topSellerRank": 5,
+      "rank": 4
+    },
+    {
       "appId": 3010850,
       "name": "Gears of War: E-Day",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1791488050",
@@ -68,8 +83,8 @@
         "final": 7980000,
         "discountPercent": 0
       },
-      "topSellerRank": 5,
-      "rank": 4
+      "topSellerRank": 6,
+      "rank": 5
     },
     {
       "appId": 570,
@@ -81,38 +96,8 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 6,
-      "rank": 5
-    },
-    {
-      "appId": 1551980,
-      "name": "Clive Barker's Hellraiser: Revival",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551980/d1e7111b93b6a8b3eb029908887648348c2c55e6/header.jpg?t=1791462446",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4790000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 8,
+      "topSellerRank": 7,
       "rank": 6
-    },
-    {
-      "appId": 1808500,
-      "name": "ARC Raiders",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3045000,
-        "discountPercent": 50
-      },
-      "topSellerRank": 9,
-      "rank": 7
     },
     {
       "appId": 1867240,
@@ -128,6 +113,21 @@
       "price": {
         "currency": "KRW",
         "final": 4727000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 9,
+      "rank": 7
+    },
+    {
+      "appId": 1551980,
+      "name": "Clive Barker's Hellraiser: Revival",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551980/d1e7111b93b6a8b3eb029908887648348c2c55e6/header.jpg?t=1791462446",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4790000,
         "discountPercent": 0
       },
       "topSellerRank": 10,
