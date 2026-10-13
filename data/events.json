@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T09:16:18.218Z",
+  "generatedAt": "2026-10-13T09:27:52.096Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -8,6 +8,49 @@
     "rankingSource": "top-sellers"
   },
   "topGames": [
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 2,
+      "rank": 1
+    },
+    {
+      "appId": 5155360,
+      "name": "Hood Warfare 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5155360/73c77dc5efdbffef90c2d32324d518e68a18fc4b/header.jpg?t=1791686243",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 589000,
+        "discountPercent": 10
+      },
+      "topSellerRank": 3,
+      "rank": 2
+    },
+    {
+      "appId": 3219030,
+      "name": "플래닛 주 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/09222bdf6acfa52881f379fadaa7efcd84921db5/header_koreana.jpg?t=1791804561",
+      "genres": [
+        "시뮬레이션",
+        "전략"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 5150000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 4,
+      "rank": 3
+    },
     {
       "appId": 4078430,
       "name": "스타워즈: 은하계 레이서™",
@@ -24,20 +67,23 @@
         "final": 6450000,
         "discountPercent": 0
       },
-      "topSellerRank": 2,
-      "rank": 1
+      "topSellerRank": 5,
+      "rank": 4
     },
     {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
+      "appId": 1808500,
+      "name": "ARC Raiders",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
       "genres": [
-        "액션",
-        "무료 플레이"
+        "액션"
       ],
-      "price": null,
-      "topSellerRank": 3,
-      "rank": 2
+      "price": {
+        "currency": "KRW",
+        "final": 3045000,
+        "discountPercent": 50
+      },
+      "topSellerRank": 6,
+      "rank": 5
     },
     {
       "appId": 632360,
@@ -52,39 +98,8 @@
         "final": 858000,
         "discountPercent": 67
       },
-      "topSellerRank": 4,
-      "rank": 3
-    },
-    {
-      "appId": 1808500,
-      "name": "ARC Raiders",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3045000,
-        "discountPercent": 50
-      },
-      "topSellerRank": 5,
-      "rank": 4
-    },
-    {
-      "appId": 3010850,
-      "name": "Gears of War: E-Day",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1791488050",
-      "genres": [
-        "액션",
-        "어드벤처"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 7980000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 6,
-      "rank": 5
+      "topSellerRank": 7,
+      "rank": 6
     },
     {
       "appId": 570,
@@ -96,42 +111,8 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 7,
-      "rank": 6
-    },
-    {
-      "appId": 1867240,
-      "name": "WARDOGS",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1790774170",
-      "genres": [
-        "액션",
-        "인디",
-        "대규모 멀티플레이어",
-        "시뮬레이션",
-        "앞서 해보기"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4727000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 9,
+      "topSellerRank": 8,
       "rank": 7
-    },
-    {
-      "appId": 1551980,
-      "name": "Clive Barker's Hellraiser: Revival",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551980/d1e7111b93b6a8b3eb029908887648348c2c55e6/header.jpg?t=1791462446",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4790000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 10,
-      "rank": 8
     }
   ],
   "topGamesLoadFailed": false,
