@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T09:27:52.096Z",
+  "generatedAt": "2026-10-14T07:40:59.070Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,15 +9,19 @@
   },
   "topGames": [
     {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
+      "appId": 3219030,
+      "name": "플래닛 주 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/09222bdf6acfa52881f379fadaa7efcd84921db5/header_koreana.jpg?t=1791912652",
       "genres": [
-        "액션",
-        "무료 플레이"
+        "시뮬레이션",
+        "전략"
       ],
-      "price": null,
-      "topSellerRank": 2,
+      "price": {
+        "currency": "KRW",
+        "final": 5150000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 1,
       "rank": 1
     },
     {
@@ -36,18 +40,14 @@
       "rank": 2
     },
     {
-      "appId": 3219030,
-      "name": "플래닛 주 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/09222bdf6acfa52881f379fadaa7efcd84921db5/header_koreana.jpg?t=1791804561",
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
       "genres": [
-        "시뮬레이션",
-        "전략"
+        "액션",
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 5150000,
-        "discountPercent": 0
-      },
+      "price": null,
       "topSellerRank": 4,
       "rank": 3
     },
@@ -71,6 +71,38 @@
       "rank": 4
     },
     {
+      "appId": 2807960,
+      "name": "Battlefield™ 6",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1791925940",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 3200000,
+        "discountPercent": 60
+      },
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
+      "appId": 2828710,
+      "name": "Valor Mortis",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2828710/e729c7f909db5c52ea780923d9b258517162866a/header.jpg?t=1791924072",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4480000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 7,
+      "rank": 6
+    },
+    {
       "appId": 1808500,
       "name": "ARC Raiders",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
@@ -82,37 +114,39 @@
         "final": 3045000,
         "discountPercent": 50
       },
-      "topSellerRank": 6,
-      "rank": 5
+      "topSellerRank": 8,
+      "rank": 7
     },
     {
-      "appId": 632360,
-      "name": "Risk of Rain 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632360/77f4cff7fea7de8a4566d1fb76ace16967604da7/header_alt_assets_7.jpg?t=1791475448",
+      "appId": 381210,
+      "name": "Dead by Daylight",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/23fed9f741423413769ad1617e41519d1a466cdc/header_alt_assets_10.jpg?t=1791302579",
       "genres": [
-        "액션",
-        "인디"
+        "액션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 858000,
-        "discountPercent": 67
+        "final": 2150000,
+        "discountPercent": 0
       },
-      "topSellerRank": 7,
-      "rank": 6
+      "topSellerRank": 9,
+      "rank": 8
     },
     {
-      "appId": 570,
-      "name": "Dota 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
+      "appId": 4231820,
+      "name": "Castlevania: Belmont's Curse",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1788478863",
       "genres": [
         "액션",
-        "전략",
-        "무료 플레이"
+        "RPG"
       ],
-      "price": null,
-      "topSellerRank": 8,
-      "rank": 7
+      "price": {
+        "currency": "KRW",
+        "final": 3500000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 10,
+      "rank": 9
     }
   ],
   "topGamesLoadFailed": false,
