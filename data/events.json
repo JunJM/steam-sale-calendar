@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-14T07:40:59.070Z",
+  "generatedAt": "2026-10-15T07:29:09.008Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,32 +9,37 @@
   },
   "topGames": [
     {
-      "appId": 3219030,
-      "name": "플래닛 주 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/09222bdf6acfa52881f379fadaa7efcd84921db5/header_koreana.jpg?t=1791912652",
+      "appId": 2929250,
+      "name": "over the hill",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/header.jpg?t=1792002879",
       "genres": [
+        "어드벤처",
+        "캐주얼",
+        "인디",
+        "레이싱",
         "시뮬레이션",
-        "전략"
+        "스포츠"
       ],
       "price": {
         "currency": "KRW",
-        "final": 5150000,
-        "discountPercent": 0
+        "final": 3432000,
+        "discountPercent": 20
       },
-      "topSellerRank": 1,
+      "topSellerRank": 2,
       "rank": 1
     },
     {
-      "appId": 5155360,
-      "name": "Hood Warfare 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5155360/73c77dc5efdbffef90c2d32324d518e68a18fc4b/header.jpg?t=1791686243",
+      "appId": 4231820,
+      "name": "Castlevania: Belmont's Curse",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1792036946",
       "genres": [
-        "액션"
+        "액션",
+        "RPG"
       ],
       "price": {
         "currency": "KRW",
-        "final": 589000,
-        "discountPercent": 10
+        "final": 3500000,
+        "discountPercent": 0
       },
       "topSellerRank": 3,
       "rank": 2
@@ -52,6 +57,37 @@
       "rank": 3
     },
     {
+      "appId": 3219030,
+      "name": "플래닛 주 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/09222bdf6acfa52881f379fadaa7efcd84921db5/header_koreana.jpg?t=1791984269",
+      "genres": [
+        "시뮬레이션",
+        "전략"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 5150000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 5,
+      "rank": 4
+    },
+    {
+      "appId": 5155360,
+      "name": "Hood Warfare 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5155360/73c77dc5efdbffef90c2d32324d518e68a18fc4b/header.jpg?t=1791686243",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 589000,
+        "discountPercent": 10
+      },
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
       "appId": 4078430,
       "name": "스타워즈: 은하계 레이서™",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1791388584",
@@ -67,40 +103,37 @@
         "final": 6450000,
         "discountPercent": 0
       },
-      "topSellerRank": 5,
-      "rank": 4
+      "topSellerRank": 7,
+      "rank": 6
     },
     {
-      "appId": 2807960,
-      "name": "Battlefield™ 6",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1791925940",
+      "appId": 4435490,
+      "name": "콜 오브 듀티®: 모던 워페어 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1791824484",
       "genres": [
         "액션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 3200000,
-        "discountPercent": 60
+        "final": 8000000,
+        "discountPercent": 0
       },
-      "topSellerRank": 6,
-      "rank": 5
+      "topSellerRank": 8,
+      "rank": 7
     },
     {
-      "appId": 2828710,
-      "name": "Valor Mortis",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2828710/e729c7f909db5c52ea780923d9b258517162866a/header.jpg?t=1791924072",
+      "appId": 578080,
+      "name": "PUBG: BATTLEGROUNDS",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1786493086",
       "genres": [
         "액션",
         "어드벤처",
-        "RPG"
+        "대규모 멀티플레이어",
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 4480000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 7,
-      "rank": 6
+      "price": null,
+      "topSellerRank": 9,
+      "rank": 8
     },
     {
       "appId": 1808500,
@@ -113,37 +146,6 @@
         "currency": "KRW",
         "final": 3045000,
         "discountPercent": 50
-      },
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 381210,
-      "name": "Dead by Daylight",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/23fed9f741423413769ad1617e41519d1a466cdc/header_alt_assets_10.jpg?t=1791302579",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 2150000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 9,
-      "rank": 8
-    },
-    {
-      "appId": 4231820,
-      "name": "Castlevania: Belmont's Curse",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1788478863",
-      "genres": [
-        "액션",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3500000,
-        "discountPercent": 0
       },
       "topSellerRank": 10,
       "rank": 9
