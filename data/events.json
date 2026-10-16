@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T07:29:09.008Z",
+  "generatedAt": "2026-10-16T07:13:14.240Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,24 +9,103 @@
   },
   "topGames": [
     {
-      "appId": 2929250,
-      "name": "over the hill",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/header.jpg?t=1792002879",
+      "appId": 2767030,
+      "name": "마블 라이벌즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1791536405",
       "genres": [
+        "액션",
         "어드벤처",
         "캐주얼",
-        "인디",
+        "대규모 멀티플레이어",
         "레이싱",
-        "시뮬레이션",
-        "스포츠"
+        "RPG",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 1,
+      "rank": 1
+    },
+    {
+      "appId": 4435490,
+      "name": "콜 오브 듀티®: 모던 워페어 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792111318",
+      "genres": [
+        "액션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 3432000,
-        "discountPercent": 20
+        "final": 8000000,
+        "discountPercent": 0
       },
-      "topSellerRank": 2,
-      "rank": 1
+      "topSellerRank": 3,
+      "rank": 2
+    },
+    {
+      "appId": 1203620,
+      "name": "Enshrouded",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/98ca939f51b39bdd41e0e9198a9ccf8421148770/header_alt_assets_2.jpg?t=1792078032",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "인디",
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 3861000,
+        "discountPercent": 10
+      },
+      "topSellerRank": 4,
+      "rank": 3
+    },
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 5,
+      "rank": 4
+    },
+    {
+      "appId": 221100,
+      "name": "DayZ",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1792059745",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "대규모 멀티플레이어"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 5900000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
+      "appId": 4954910,
+      "name": "Scam With Your Friends",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1792088818",
+      "genres": [
+        "액션",
+        "캐주얼",
+        "인디",
+        "시뮬레이션",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 945000,
+        "discountPercent": 10
+      },
+      "topSellerRank": 8,
+      "rank": 6
     },
     {
       "appId": 4231820,
@@ -41,51 +120,8 @@
         "final": 3500000,
         "discountPercent": 0
       },
-      "topSellerRank": 3,
-      "rank": 2
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 4,
-      "rank": 3
-    },
-    {
-      "appId": 3219030,
-      "name": "플래닛 주 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/09222bdf6acfa52881f379fadaa7efcd84921db5/header_koreana.jpg?t=1791984269",
-      "genres": [
-        "시뮬레이션",
-        "전략"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 5150000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 5,
-      "rank": 4
-    },
-    {
-      "appId": 5155360,
-      "name": "Hood Warfare 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5155360/73c77dc5efdbffef90c2d32324d518e68a18fc4b/header.jpg?t=1791686243",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 589000,
-        "discountPercent": 10
-      },
-      "topSellerRank": 6,
-      "rank": 5
+      "topSellerRank": 9,
+      "rank": 7
     },
     {
       "appId": 4078430,
@@ -103,52 +139,8 @@
         "final": 6450000,
         "discountPercent": 0
       },
-      "topSellerRank": 7,
-      "rank": 6
-    },
-    {
-      "appId": 4435490,
-      "name": "콜 오브 듀티®: 모던 워페어 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1791824484",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 8000000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 578080,
-      "name": "PUBG: BATTLEGROUNDS",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1786493086",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "대규모 멀티플레이어",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 9,
-      "rank": 8
-    },
-    {
-      "appId": 1808500,
-      "name": "ARC Raiders",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/29e8af9fbf06833558758f94cfb406746f338c45/header_alt_assets_8.jpg?t=1791401542",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3045000,
-        "discountPercent": 50
-      },
       "topSellerRank": 10,
-      "rank": 9
+      "rank": 8
     }
   ],
   "topGamesLoadFailed": false,
