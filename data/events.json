@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T07:13:14.240Z",
+  "generatedAt": "2026-10-17T06:59:23.274Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,9 +9,36 @@
   },
   "topGames": [
     {
+      "appId": 4435490,
+      "name": "콜 오브 듀티®: 모던 워페어 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792214069",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 8000000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 1,
+      "rank": 1
+    },
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 3,
+      "rank": 2
+    },
+    {
       "appId": 2767030,
       "name": "마블 라이벌즈",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1791536405",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
       "genres": [
         "액션",
         "어드벤처",
@@ -23,23 +50,27 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 1,
-      "rank": 1
+      "topSellerRank": 4,
+      "rank": 3
     },
     {
-      "appId": 4435490,
-      "name": "콜 오브 듀티®: 모던 워페어 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792111318",
+      "appId": 4078430,
+      "name": "스타워즈: 은하계 레이서™",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1791388584",
       "genres": [
-        "액션"
+        "액션",
+        "어드벤처",
+        "레이싱",
+        "시뮬레이션",
+        "스포츠"
       ],
       "price": {
         "currency": "KRW",
-        "final": 8000000,
+        "final": 6450000,
         "discountPercent": 0
       },
-      "topSellerRank": 3,
-      "rank": 2
+      "topSellerRank": 5,
+      "rank": 4
     },
     {
       "appId": 1203620,
@@ -55,35 +86,6 @@
         "currency": "KRW",
         "final": 3861000,
         "discountPercent": 10
-      },
-      "topSellerRank": 4,
-      "rank": 3
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 5,
-      "rank": 4
-    },
-    {
-      "appId": 221100,
-      "name": "DayZ",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221100/header.jpg?t=1792059745",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "대규모 멀티플레이어"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 5900000,
-        "discountPercent": 0
       },
       "topSellerRank": 6,
       "rank": 5
@@ -104,8 +106,27 @@
         "final": 945000,
         "discountPercent": 10
       },
-      "topSellerRank": 8,
+      "topSellerRank": 7,
       "rank": 6
+    },
+    {
+      "appId": 1867240,
+      "name": "WARDOGS",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/8a0657c393a713034416326d3be00c8ee7979a77/header_alt_assets_0_koreana.jpg?t=1791928607",
+      "genres": [
+        "액션",
+        "인디",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4727000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 8,
+      "rank": 7
     },
     {
       "appId": 4231820,
@@ -121,26 +142,22 @@
         "discountPercent": 0
       },
       "topSellerRank": 9,
-      "rank": 7
+      "rank": 8
     },
     {
-      "appId": 4078430,
-      "name": "스타워즈: 은하계 레이서™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1791388584",
+      "appId": 4356430,
+      "name": "NBA 2K27",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4356430/9152438fde7de9f4c20b4fd9072ba69f844dacab/header.jpg?t=1792163139",
       "genres": [
-        "액션",
-        "어드벤처",
-        "레이싱",
-        "시뮬레이션",
         "스포츠"
       ],
       "price": {
         "currency": "KRW",
-        "final": 6450000,
-        "discountPercent": 0
+        "final": 5936000,
+        "discountPercent": 30
       },
       "topSellerRank": 10,
-      "rank": 8
+      "rank": 9
     }
   ],
   "topGamesLoadFailed": false,
