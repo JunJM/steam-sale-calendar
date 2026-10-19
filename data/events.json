@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T07:15:30.393Z",
+  "generatedAt": "2026-10-19T07:50:05.397Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -73,6 +73,24 @@
       "rank": 4
     },
     {
+      "appId": 1203620,
+      "name": "Enshrouded",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/98ca939f51b39bdd41e0e9198a9ccf8421148770/header_alt_assets_2.jpg?t=1792078032",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "인디",
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 3861000,
+        "discountPercent": 10
+      },
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
       "appId": 1867240,
       "name": "WARDOGS",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/8a0657c393a713034416326d3be00c8ee7979a77/header_alt_assets_0_koreana.jpg?t=1791928607",
@@ -87,24 +105,6 @@
         "currency": "KRW",
         "final": 4727000,
         "discountPercent": 0
-      },
-      "topSellerRank": 6,
-      "rank": 5
-    },
-    {
-      "appId": 1203620,
-      "name": "Enshrouded",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/98ca939f51b39bdd41e0e9198a9ccf8421148770/header_alt_assets_2.jpg?t=1792078032",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "인디",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3861000,
-        "discountPercent": 10
       },
       "topSellerRank": 7,
       "rank": 6
