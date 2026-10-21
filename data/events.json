@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T07:37:13.847Z",
+  "generatedAt": "2026-10-21T07:42:08.873Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -11,7 +11,7 @@
     {
       "appId": 4435490,
       "name": "콜 오브 듀티®: 모던 워페어 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792431472",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792523954",
       "genres": [
         "액션"
       ],
@@ -24,6 +24,21 @@
       "rank": 1
     },
     {
+      "appId": 553850,
+      "name": "HELLDIVERS™ 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/2a58d0a6c901e61cc6ad5a7cb488048a1e9f4809/header_koreana.jpg?t=1792487611",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4480000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 2,
+      "rank": 2
+    },
+    {
       "appId": 730,
       "name": "Counter-Strike 2",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
@@ -33,130 +48,81 @@
       ],
       "price": null,
       "topSellerRank": 3,
-      "rank": 2
-    },
-    {
-      "appId": 2767030,
-      "name": "마블 라이벌즈",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "캐주얼",
-        "대규모 멀티플레이어",
-        "레이싱",
-        "RPG",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 4,
       "rank": 3
     },
     {
-      "appId": 4078430,
-      "name": "스타워즈: 은하계 레이서™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4078430/1baff812cfb8de999b7569197d2435f24fec5534/header_koreana.jpg?t=1791388584",
+      "appId": 2073850,
+      "name": "THE FINALS",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/4b0efa1275c8cedc030209eb174af726a5ca1776/header.jpg?t=1792501373",
       "genres": [
         "액션",
-        "어드벤처",
-        "레이싱",
-        "시뮬레이션",
-        "스포츠"
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 6450000,
-        "discountPercent": 0
-      },
+      "price": null,
       "topSellerRank": 5,
       "rank": 4
     },
     {
-      "appId": 230410,
-      "name": "Warframe",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1790176468",
+      "appId": 4162040,
+      "name": "젠레스 존 제로",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4162040/aebe3a0fb4154c2278965e4c23eed10f998ed94a/header_alt_assets_2_koreana.jpg?t=1792533213",
       "genres": [
         "액션",
+        "어드벤처",
         "RPG",
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 6,
+      "topSellerRank": 7,
       "rank": 5
     },
     {
-      "appId": 1203620,
-      "name": "Enshrouded",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/98ca939f51b39bdd41e0e9198a9ccf8421148770/header_alt_assets_2.jpg?t=1792078032",
+      "appId": 3259780,
+      "name": "FINAL FANTASY RESONANCE",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1788534743",
       "genres": [
-        "액션",
-        "어드벤처",
-        "인디",
         "RPG"
       ],
       "price": {
         "currency": "KRW",
-        "final": 3861000,
-        "discountPercent": 10
+        "final": 6280000,
+        "discountPercent": 0
       },
-      "topSellerRank": 7,
+      "topSellerRank": 8,
       "rank": 6
     },
     {
-      "appId": 4954910,
-      "name": "Scam With Your Friends",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1792469490",
+      "appId": 1091500,
+      "name": "Cyberpunk 2077",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/26b96fa9c8af43189cbecbbc329ade29d9c9cf3e/header_koreana.jpg?t=1784714077",
       "genres": [
-        "액션",
-        "캐주얼",
-        "인디",
-        "시뮬레이션",
-        "앞서 해보기"
+        "RPG"
       ],
       "price": {
         "currency": "KRW",
-        "final": 945000,
-        "discountPercent": 10
+        "final": 1980000,
+        "discountPercent": 70
       },
-      "topSellerRank": 8,
+      "topSellerRank": 9,
       "rank": 7
     },
     {
-      "appId": 1867240,
-      "name": "WARDOGS",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/8a0657c393a713034416326d3be00c8ee7979a77/header_alt_assets_0_koreana.jpg?t=1791928607",
-      "genres": [
-        "액션",
-        "인디",
-        "대규모 멀티플레이어",
-        "시뮬레이션",
-        "앞서 해보기"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4727000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 9,
-      "rank": 8
-    },
-    {
-      "appId": 4126040,
-      "name": "애니모",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/43b430b83e739f056c7878bf11a6d8a3c1b8bb59/header_koreana.jpg?t=1791771029",
+      "appId": 2315050,
+      "name": "우리는 여기에 있었다 투모로우",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2315050/1e74865089e86e73fe7abefec0f5b59c1ce48305/header_alt_assets_3.jpg?t=1792531815",
       "genres": [
         "액션",
         "어드벤처",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "전략",
-        "무료 플레이"
+        "캐주얼",
+        "인디"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 1890000,
+        "discountPercent": 10
+      },
       "topSellerRank": 10,
-      "rank": 9
+      "rank": 8
     }
   ],
   "topGamesLoadFailed": false,
