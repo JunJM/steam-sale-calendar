@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-22T07:37:57.566Z",
+  "generatedAt": "2026-10-23T07:34:55.460Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -10,8 +10,8 @@
   "topGames": [
     {
       "appId": 4435490,
-      "name": "콜 오브 듀티®: 모던 워페어 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792523954",
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792728107",
       "genres": [
         "액션"
       ],
@@ -26,7 +26,7 @@
     {
       "appId": 3259780,
       "name": "FINAL FANTASY RESONANCE",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1788534743",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792685446",
       "genres": [
         "RPG"
       ],
@@ -39,6 +39,21 @@
       "rank": 2
     },
     {
+      "appId": 1091500,
+      "name": "Cyberpunk 2077",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ca6de5bbca893ccc5e8715b1068f6443d0918ea4/header_alt_assets_9_koreana.jpg?t=1792682505",
+      "genres": [
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 1980000,
+        "discountPercent": 70
+      },
+      "topSellerRank": 3,
+      "rank": 3
+    },
+    {
       "appId": 730,
       "name": "Counter-Strike 2",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
@@ -48,71 +63,7 @@
       ],
       "price": null,
       "topSellerRank": 4,
-      "rank": 3
-    },
-    {
-      "appId": 1091500,
-      "name": "Cyberpunk 2077",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/26b96fa9c8af43189cbecbbc329ade29d9c9cf3e/header_koreana.jpg?t=1784714077",
-      "genres": [
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 1980000,
-        "discountPercent": 70
-      },
-      "topSellerRank": 5,
       "rank": 4
-    },
-    {
-      "appId": 2139460,
-      "name": "Once Human",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/c18b08a2f93dec32fcc5fa71bc2da44ee42de1f0/header.jpg?t=1792640697",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "캐주얼",
-        "대규모 멀티플레이어",
-        "레이싱",
-        "RPG",
-        "시뮬레이션",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 7,
-      "rank": 5
-    },
-    {
-      "appId": 553850,
-      "name": "HELLDIVERS™ 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/2a58d0a6c901e61cc6ad5a7cb488048a1e9f4809/header_koreana.jpg?t=1792487611",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4480000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 8,
-      "rank": 6
-    },
-    {
-      "appId": 1151340,
-      "name": "Fallout 76",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151340/f85dc32bab9fe57807cf588150579a8b2ab409f4/header.jpg?t=1791379859",
-      "genres": [
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 890000,
-        "discountPercent": 80
-      },
-      "topSellerRank": 9,
-      "rank": 7
     },
     {
       "appId": 2767030,
@@ -129,8 +80,41 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 10,
-      "rank": 8
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
+      "appId": 3513350,
+      "name": "Wuthering Waves",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/bc5f8263acb7a97f033ea92cad07c0fedd992b6f/header_koreana.jpg?t=1791864800",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "RPG",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 7,
+      "rank": 6
+    },
+    {
+      "appId": 252490,
+      "name": "Rust",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1781536981",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "인디",
+        "대규모 멀티플레이어",
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4200000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 9,
+      "rank": 7
     }
   ],
   "topGamesLoadFailed": false,
