@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-23T07:34:55.460Z",
+  "generatedAt": "2026-10-24T07:20:07.296Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -11,7 +11,7 @@
     {
       "appId": 4435490,
       "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792728107",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792806931",
       "genres": [
         "액션"
       ],
@@ -26,7 +26,7 @@
     {
       "appId": 3259780,
       "name": "FINAL FANTASY RESONANCE",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792685446",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792758611",
       "genres": [
         "RPG"
       ],
@@ -84,36 +84,30 @@
       "rank": 5
     },
     {
-      "appId": 3513350,
-      "name": "Wuthering Waves",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/bc5f8263acb7a97f033ea92cad07c0fedd992b6f/header_koreana.jpg?t=1791864800",
+      "appId": 236390,
+      "name": "War Thunder",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/38881c549e623fe432af4e7b4bc3952b443906f5/header.jpg?t=1791988478",
       "genres": [
         "액션",
-        "어드벤처",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 8,
+      "rank": 6
+    },
+    {
+      "appId": 230410,
+      "name": "Warframe",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1792613117",
+      "genres": [
+        "액션",
         "RPG",
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 7,
-      "rank": 6
-    },
-    {
-      "appId": 252490,
-      "name": "Rust",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1781536981",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "인디",
-        "대규모 멀티플레이어",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4200000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 9,
+      "topSellerRank": 10,
       "rank": 7
     }
   ],
