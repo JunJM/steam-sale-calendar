@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-24T07:20:07.296Z",
+  "generatedAt": "2026-10-25T07:37:15.216Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -24,21 +24,6 @@
       "rank": 1
     },
     {
-      "appId": 3259780,
-      "name": "FINAL FANTASY RESONANCE",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792758611",
-      "genres": [
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6280000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 2,
-      "rank": 2
-    },
-    {
       "appId": 1091500,
       "name": "Cyberpunk 2077",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ca6de5bbca893ccc5e8715b1068f6443d0918ea4/header_alt_assets_9_koreana.jpg?t=1792682505",
@@ -50,8 +35,8 @@
         "final": 1980000,
         "discountPercent": 70
       },
-      "topSellerRank": 3,
-      "rank": 3
+      "topSellerRank": 2,
+      "rank": 2
     },
     {
       "appId": 730,
@@ -62,7 +47,22 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 4,
+      "topSellerRank": 3,
+      "rank": 3
+    },
+    {
+      "appId": 3259780,
+      "name": "FINAL FANTASY RESONANCE",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792758611",
+      "genres": [
+        "RPG"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 6280000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 5,
       "rank": 4
     },
     {
@@ -80,21 +80,26 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 6,
+      "topSellerRank": 7,
       "rank": 5
     },
     {
-      "appId": 236390,
-      "name": "War Thunder",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/38881c549e623fe432af4e7b4bc3952b443906f5/header.jpg?t=1791988478",
+      "appId": 4954910,
+      "name": "Scam With Your Friends",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1792556475",
       "genres": [
         "액션",
-        "대규모 멀티플레이어",
+        "캐주얼",
+        "인디",
         "시뮬레이션",
-        "무료 플레이"
+        "앞서 해보기"
       ],
-      "price": null,
-      "topSellerRank": 8,
+      "price": {
+        "currency": "KRW",
+        "final": 945000,
+        "discountPercent": 10
+      },
+      "topSellerRank": 9,
       "rank": 6
     },
     {
