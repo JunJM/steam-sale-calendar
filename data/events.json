@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-26T07:50:11.666Z",
+  "generatedAt": "2026-10-27T07:54:58.237Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -11,7 +11,7 @@
     {
       "appId": 4435490,
       "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1792806931",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1793043062",
       "genres": [
         "액션"
       ],
@@ -24,31 +24,20 @@
       "rank": 1
     },
     {
-      "appId": 1091500,
-      "name": "Cyberpunk 2077",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ca6de5bbca893ccc5e8715b1068f6443d0918ea4/header_alt_assets_9_koreana.jpg?t=1792682505",
+      "appId": 4115450,
+      "name": "Phantom Blade Zero",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1793044660",
       "genres": [
+        "액션",
         "RPG"
       ],
       "price": {
         "currency": "KRW",
-        "final": 1980000,
-        "discountPercent": 70
+        "final": 6980000,
+        "discountPercent": 0
       },
       "topSellerRank": 2,
       "rank": 2
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1791824795",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 4,
-      "rank": 3
     },
     {
       "appId": 5335510,
@@ -67,13 +56,25 @@
         "final": 820000,
         "discountPercent": 15
       },
+      "topSellerRank": 4,
+      "rank": 3
+    },
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
       "topSellerRank": 5,
       "rank": 4
     },
     {
       "appId": 3259780,
       "name": "FINAL FANTASY RESONANCE",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792758611",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1793031418",
       "genres": [
         "RPG"
       ],
@@ -82,24 +83,38 @@
         "final": 6280000,
         "discountPercent": 0
       },
-      "topSellerRank": 6,
+      "topSellerRank": 7,
       "rank": 5
     },
     {
-      "appId": 4115450,
-      "name": "Phantom Blade Zero",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1792637475",
+      "appId": 381210,
+      "name": "Dead by Daylight",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/23fed9f741423413769ad1617e41519d1a466cdc/header_alt_assets_10.jpg?t=1791302579",
       "genres": [
-        "액션",
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 860000,
+        "discountPercent": 60
+      },
+      "topSellerRank": 8,
+      "rank": 6
+    },
+    {
+      "appId": 1091500,
+      "name": "Cyberpunk 2077",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ca6de5bbca893ccc5e8715b1068f6443d0918ea4/header_alt_assets_9_koreana.jpg?t=1792682505",
+      "genres": [
         "RPG"
       ],
       "price": {
         "currency": "KRW",
-        "final": 6980000,
+        "final": 6600000,
         "discountPercent": 0
       },
-      "topSellerRank": 8,
-      "rank": 6
+      "topSellerRank": 9,
+      "rank": 7
     },
     {
       "appId": 230410,
@@ -112,7 +127,7 @@
       ],
       "price": null,
       "topSellerRank": 10,
-      "rank": 7
+      "rank": 8
     }
   ],
   "topGamesLoadFailed": false,
