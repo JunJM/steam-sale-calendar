@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T08:32:36.227Z",
+  "generatedAt": "2026-10-30T08:41:18.580Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -8,6 +8,21 @@
     "rankingSource": "top-sellers"
   },
   "topGames": [
+    {
+      "appId": 4435490,
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1793201144",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 8000000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 1,
+      "rank": 1
+    },
     {
       "appId": 4115450,
       "name": "Phantom Blade Zero",
@@ -21,23 +36,53 @@
         "final": 6980000,
         "discountPercent": 0
       },
-      "topSellerRank": 1,
-      "rank": 1
+      "topSellerRank": 2,
+      "rank": 2
     },
     {
-      "appId": 4435490,
-      "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1793201144",
+      "appId": 4126040,
+      "name": "애니모",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/0ebd0a1872497c9914907c5cc3fe9e96ffffc508/header_koreana.jpg?t=1793258293",
       "genres": [
-        "액션"
+        "액션",
+        "어드벤처",
+        "대규모 멀티플레이어",
+        "RPG",
+        "시뮬레이션",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 3,
+      "rank": 3
+    },
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 5,
+      "rank": 4
+    },
+    {
+      "appId": 3321460,
+      "name": "붉은사막 Enhanced",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/4a895369007efe7cc9da27a999bbca2427d92bb3/header_koreana.jpg?t=1792637341",
+      "genres": [
+        "액션",
+        "어드벤처"
       ],
       "price": {
         "currency": "KRW",
-        "final": 8000000,
+        "final": 7980000,
         "discountPercent": 0
       },
-      "topSellerRank": 2,
-      "rank": 2
+      "topSellerRank": 6,
+      "rank": 5
     },
     {
       "appId": 4348910,
@@ -54,20 +99,26 @@
         "final": 1791000,
         "discountPercent": 10
       },
-      "topSellerRank": 4,
-      "rank": 3
+      "topSellerRank": 8,
+      "rank": 6
     },
     {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+      "appId": 2767030,
+      "name": "마블 라이벌즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
       "genres": [
         "액션",
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "레이싱",
+        "RPG",
+        "전략",
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 5,
-      "rank": 4
+      "topSellerRank": 9,
+      "rank": 7
     },
     {
       "appId": 5335510,
@@ -85,51 +136,6 @@
         "currency": "KRW",
         "final": 820000,
         "discountPercent": 15
-      },
-      "topSellerRank": 7,
-      "rank": 5
-    },
-    {
-      "appId": 236390,
-      "name": "War Thunder",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/38881c549e623fe432af4e7b4bc3952b443906f5/header.jpg?t=1793185672",
-      "genres": [
-        "액션",
-        "대규모 멀티플레이어",
-        "시뮬레이션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 8,
-      "rank": 6
-    },
-    {
-      "appId": 3259780,
-      "name": "FINAL FANTASY RESONANCE",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1793031418",
-      "genres": [
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6280000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 9,
-      "rank": 7
-    },
-    {
-      "appId": 3321460,
-      "name": "붉은사막 Enhanced",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/4a895369007efe7cc9da27a999bbca2427d92bb3/header_koreana.jpg?t=1792637341",
-      "genres": [
-        "액션",
-        "어드벤처"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 7980000,
-        "discountPercent": 0
       },
       "topSellerRank": 10,
       "rank": 8
