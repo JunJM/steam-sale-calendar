@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-01T09:18:15.434Z",
+  "generatedAt": "2026-11-02T09:33:29.490Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -48,22 +48,18 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 3,
+      "topSellerRank": 4,
       "rank": 3
     },
     {
-      "appId": 3321460,
-      "name": "붉은사막 Enhanced",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/4a895369007efe7cc9da27a999bbca2427d92bb3/header_koreana.jpg?t=1792637341",
+      "appId": 359550,
+      "name": "톰 클랜시의 레인보우식스 시즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/555b5051d332c5f6b86f88ba5dfd80404dc91aaa/header_alt_assets_27.jpg?t=1792001976",
       "genres": [
         "액션",
-        "어드벤처"
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 7980000,
-        "discountPercent": 0
-      },
+      "price": null,
       "topSellerRank": 5,
       "rank": 4
     },
@@ -106,6 +102,22 @@
       "rank": 6
     },
     {
+      "appId": 3321460,
+      "name": "붉은사막 Enhanced",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/4a895369007efe7cc9da27a999bbca2427d92bb3/header_koreana.jpg?t=1792637341",
+      "genres": [
+        "액션",
+        "어드벤처"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 7980000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 8,
+      "rank": 7
+    },
+    {
       "appId": 230410,
       "name": "Warframe",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1792613117",
@@ -115,25 +127,23 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 4126040,
-      "name": "애니모",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/0ebd0a1872497c9914907c5cc3fe9e96ffffc508/header_koreana.jpg?t=1793258293",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
       "topSellerRank": 9,
       "rank": 8
+    },
+    {
+      "appId": 381210,
+      "name": "Dead by Daylight",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg?t=1793202236",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 860000,
+        "discountPercent": 60
+      },
+      "topSellerRank": 10,
+      "rank": 9
     }
   ],
   "topGamesLoadFailed": false,
