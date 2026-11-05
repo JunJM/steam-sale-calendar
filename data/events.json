@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-04T09:18:51.672Z",
+  "generatedAt": "2026-11-05T09:31:29.417Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -8,6 +8,33 @@
     "rankingSource": "top-sellers"
   },
   "topGames": [
+    {
+      "appId": 4435490,
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1793833638",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 8000000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 2,
+      "rank": 1
+    },
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 4,
+      "rank": 2
+    },
     {
       "appId": 4251460,
       "name": "Godzilla: Destroy All Monsters Melee Remastered",
@@ -21,69 +48,8 @@
         "final": 3100000,
         "discountPercent": 0
       },
-      "topSellerRank": 1,
-      "rank": 1
-    },
-    {
-      "appId": 4435490,
-      "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1793753407",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 8000000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 2,
-      "rank": 2
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 3,
+      "topSellerRank": 6,
       "rank": 3
-    },
-    {
-      "appId": 2320980,
-      "name": "Loftia",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320980/header.jpg?t=1793732506",
-      "genres": [
-        "어드벤처",
-        "캐주얼",
-        "인디",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "앞서 해보기"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 2407000,
-        "discountPercent": 17
-      },
-      "topSellerRank": 4,
-      "rank": 4
-    },
-    {
-      "appId": 1172470,
-      "name": "Apex 레전드™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/4219c147f1e094297c726d537518babba7f3ae2d/header.jpg?t=1793731328",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 5,
-      "rank": 5
     },
     {
       "appId": 4115450,
@@ -99,26 +65,33 @@
         "discountPercent": 0
       },
       "topSellerRank": 7,
-      "rank": 6
+      "rank": 4
     },
     {
-      "appId": 3218230,
-      "name": "아키에이지 크로니클",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3218230/header.jpg?t=1793752512",
+      "appId": 1172470,
+      "name": "Apex 레전드™",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/4219c147f1e094297c726d537518babba7f3ae2d/header.jpg?t=1793731328",
       "genres": [
         "액션",
         "어드벤처",
-        "대규모 멀티플레이어",
-        "RPG",
-        "앞서 해보기"
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 3600000,
-        "discountPercent": 0
-      },
+      "price": null,
+      "topSellerRank": 9,
+      "rank": 5
+    },
+    {
+      "appId": 230410,
+      "name": "Warframe",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1792613117",
+      "genres": [
+        "액션",
+        "RPG",
+        "무료 플레이"
+      ],
+      "price": null,
       "topSellerRank": 10,
-      "rank": 7
+      "rank": 6
     }
   ],
   "topGamesLoadFailed": false,
