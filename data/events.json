@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-06T09:26:49.554Z",
+  "generatedAt": "2026-11-07T08:49:46.060Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -38,13 +38,25 @@
     {
       "appId": 1938090,
       "name": "콜 오브 듀티®",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/00ee0d1f8e6f3d351695d0d70603afd3eecd68bf/header_koreana.jpg?t=1793941964",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/00ee0d1f8e6f3d351695d0d70603afd3eecd68bf/header_koreana.jpg?t=1793996750",
       "genres": [
         "액션"
       ],
       "price": null,
-      "topSellerRank": 4,
+      "topSellerRank": 3,
       "rank": 3
+    },
+    {
+      "appId": 1962663,
+      "name": "콜 오브 듀티®: 워존",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962663/c5be0e42beb9bc881855e5d8cbac003576c0ab4c/header.jpg?t=1793941339",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 4,
+      "rank": 4
     },
     {
       "appId": 4115450,
@@ -59,8 +71,21 @@
         "final": 6980000,
         "discountPercent": 0
       },
-      "topSellerRank": 5,
-      "rank": 4
+      "topSellerRank": 6,
+      "rank": 5
+    },
+    {
+      "appId": 230410,
+      "name": "Warframe",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1793987416",
+      "genres": [
+        "액션",
+        "RPG",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 7,
+      "rank": 6
     },
     {
       "appId": 4251460,
@@ -75,51 +100,37 @@
         "final": 3100000,
         "discountPercent": 0
       },
-      "topSellerRank": 7,
-      "rank": 5
-    },
-    {
-      "appId": 2767030,
-      "name": "마블 라이벌즈",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "캐주얼",
-        "대규모 멀티플레이어",
-        "레이싱",
-        "RPG",
-        "전략",
-        "무료 플레이"
-      ],
-      "price": null,
       "topSellerRank": 8,
-      "rank": 6
-    },
-    {
-      "appId": 1962663,
-      "name": "콜 오브 듀티®: 워존",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962663/c5be0e42beb9bc881855e5d8cbac003576c0ab4c/header.jpg?t=1793941339",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 9,
       "rank": 7
     },
     {
-      "appId": 230410,
-      "name": "Warframe",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1792613117",
+      "appId": 438100,
+      "name": "VRChat",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454",
+      "genres": [
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "스포츠",
+        "무료 플레이",
+        "앞서 해보기"
+      ],
+      "price": null,
+      "topSellerRank": 9,
+      "rank": 8
+    },
+    {
+      "appId": 359550,
+      "name": "톰 클랜시의 레인보우식스 시즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/1c7b1ea3405a69c54429e2aa3dc31f3cbbeaa456/header_alt_assets_28.jpg?t=1792001976",
       "genres": [
         "액션",
-        "RPG",
         "무료 플레이"
       ],
       "price": null,
       "topSellerRank": 10,
-      "rank": 8
+      "rank": 9
     }
   ],
   "topGamesLoadFailed": false,
