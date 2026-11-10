@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-09T09:51:05.922Z",
+  "generatedAt": "2026-11-10T09:54:22.367Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -24,6 +24,23 @@
       "rank": 1
     },
     {
+      "appId": 4576490,
+      "name": "Casualties: Unknown",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4576490/907888dce73f50c48410b5ab92971a0d95776b29/header.jpg?t=1794232782",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "시뮬레이션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 2108000,
+        "discountPercent": 15
+      },
+      "topSellerRank": 2,
+      "rank": 2
+    },
+    {
       "appId": 730,
       "name": "Counter-Strike 2",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
@@ -32,55 +49,38 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 2,
-      "rank": 2
+      "topSellerRank": 3,
+      "rank": 3
     },
     {
-      "appId": 2406770,
-      "name": "Bodycam",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/83004d0278c8e8e42529e06d7caf7e8ef638e326/header_alt_assets_2.jpg?t=1794111990",
+      "appId": 3629430,
+      "name": "DREADMOOR",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3629430/5b80c132b3479c69a92c25a5266db523850cfc36/header.jpg?t=1794233002",
       "genres": [
         "액션",
+        "어드벤처",
         "인디",
-        "대규모 멀티플레이어",
+        "RPG",
         "시뮬레이션",
-        "전략",
         "앞서 해보기"
       ],
       "price": {
         "currency": "KRW",
-        "final": 3750000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 4,
-      "rank": 3
-    },
-    {
-      "appId": 4115450,
-      "name": "Phantom Blade Zero",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1793261976",
-      "genres": [
-        "액션",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6980000,
-        "discountPercent": 0
+        "final": 1890000,
+        "discountPercent": 10
       },
       "topSellerRank": 5,
       "rank": 4
     },
     {
-      "appId": 438100,
-      "name": "VRChat",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454",
+      "appId": 4262460,
+      "name": "ROB RUN",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
       "genres": [
-        "어드벤처",
-        "캐주얼",
+        "액션",
         "대규모 멀티플레이어",
+        "RPG",
         "시뮬레이션",
-        "스포츠",
         "무료 플레이",
         "앞서 해보기"
       ],
@@ -102,41 +102,54 @@
       "rank": 6
     },
     {
-      "appId": 1938090,
-      "name": "콜 오브 듀티®",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/00ee0d1f8e6f3d351695d0d70603afd3eecd68bf/header_koreana.jpg?t=1793996750",
+      "appId": 4115450,
+      "name": "Phantom Blade Zero",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1793261976",
       "genres": [
-        "액션"
+        "액션",
+        "RPG"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 6980000,
+        "discountPercent": 0
+      },
       "topSellerRank": 8,
       "rank": 7
     },
     {
-      "appId": 4262460,
-      "name": "ROB RUN",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
+      "appId": 2406770,
+      "name": "Bodycam",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/36264077393918f3945447eed3d6374cdf21e69a/header.jpg?t=1794250615",
       "genres": [
         "액션",
+        "인디",
         "대규모 멀티플레이어",
-        "RPG",
         "시뮬레이션",
-        "무료 플레이",
+        "전략",
         "앞서 해보기"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 3750000,
+        "discountPercent": 0
+      },
       "topSellerRank": 9,
       "rank": 8
     },
     {
-      "appId": 1962663,
-      "name": "콜 오브 듀티®: 워존",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962663/c5be0e42beb9bc881855e5d8cbac003576c0ab4c/header.jpg?t=1793941339",
+      "appId": 2584270,
+      "name": "Mortal Shell II",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584270/0a4c23b70ced29fac344186ea564dae67c80cfd6/header.jpg?t=1794241756",
       "genres": [
         "액션",
-        "무료 플레이"
+        "RPG"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 4110000,
+        "discountPercent": 25
+      },
       "topSellerRank": 10,
       "rank": 9
     }
