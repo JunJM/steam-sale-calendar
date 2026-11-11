@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-10T09:54:22.367Z",
+  "generatedAt": "2026-11-11T09:29:03.129Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,9 +9,22 @@
   },
   "topGames": [
     {
+      "appId": 1172470,
+      "name": "Apex 레전드™",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/dc5c390e9a273a7248f75c1b2d59987f6179323c/header_alt_assets_7.jpg?t=1794339458",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 1,
+      "rank": 1
+    },
+    {
       "appId": 4435490,
       "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1793941334",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794339680",
       "genres": [
         "액션"
       ],
@@ -19,23 +32,6 @@
         "currency": "KRW",
         "final": 8000000,
         "discountPercent": 0
-      },
-      "topSellerRank": 1,
-      "rank": 1
-    },
-    {
-      "appId": 4576490,
-      "name": "Casualties: Unknown",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4576490/907888dce73f50c48410b5ab92971a0d95776b29/header.jpg?t=1794232782",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "시뮬레이션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 2108000,
-        "discountPercent": 15
       },
       "topSellerRank": 2,
       "rank": 2
@@ -53,23 +49,21 @@
       "rank": 3
     },
     {
-      "appId": 3629430,
-      "name": "DREADMOOR",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3629430/5b80c132b3479c69a92c25a5266db523850cfc36/header.jpg?t=1794233002",
+      "appId": 3669620,
+      "name": "Warhammer Survivors",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669620/dc61fccdeec6b05a58fbcdd7b1d0bbbe1f6999ea/header.jpg?t=1794319205",
       "genres": [
         "액션",
-        "어드벤처",
+        "캐주얼",
         "인디",
-        "RPG",
-        "시뮬레이션",
-        "앞서 해보기"
+        "RPG"
       ],
       "price": {
         "currency": "KRW",
-        "final": 1890000,
+        "final": 783000,
         "discountPercent": 10
       },
-      "topSellerRank": 5,
+      "topSellerRank": 4,
       "rank": 4
     },
     {
@@ -102,56 +96,39 @@
       "rank": 6
     },
     {
-      "appId": 4115450,
-      "name": "Phantom Blade Zero",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1793261976",
+      "appId": 2767030,
+      "name": "마블 라이벌즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
       "genres": [
         "액션",
-        "RPG"
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "레이싱",
+        "RPG",
+        "전략",
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 6980000,
-        "discountPercent": 0
-      },
+      "price": null,
       "topSellerRank": 8,
       "rank": 7
     },
     {
-      "appId": 2406770,
-      "name": "Bodycam",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/36264077393918f3945447eed3d6374cdf21e69a/header.jpg?t=1794250615",
+      "appId": 4576490,
+      "name": "Casualties: Unknown",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4576490/907888dce73f50c48410b5ab92971a0d95776b29/header.jpg?t=1794232782",
       "genres": [
         "액션",
-        "인디",
-        "대규모 멀티플레이어",
-        "시뮬레이션",
-        "전략",
-        "앞서 해보기"
+        "어드벤처",
+        "시뮬레이션"
       ],
       "price": {
         "currency": "KRW",
-        "final": 3750000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 9,
-      "rank": 8
-    },
-    {
-      "appId": 2584270,
-      "name": "Mortal Shell II",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584270/0a4c23b70ced29fac344186ea564dae67c80cfd6/header.jpg?t=1794241756",
-      "genres": [
-        "액션",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 4110000,
-        "discountPercent": 25
+        "final": 2108000,
+        "discountPercent": 15
       },
       "topSellerRank": 10,
-      "rank": 9
+      "rank": 8
     }
   ],
   "topGamesLoadFailed": false,
