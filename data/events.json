@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-11T09:29:03.129Z",
+  "generatedAt": "2026-11-12T09:52:32.328Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,16 +9,14 @@
   },
   "topGames": [
     {
-      "appId": 1172470,
-      "name": "Apex 레전드™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/dc5c390e9a273a7248f75c1b2d59987f6179323c/header_alt_assets_7.jpg?t=1794339458",
+      "appId": 1973530,
+      "name": "Limbus Company",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1793975559",
       "genres": [
-        "액션",
-        "어드벤처",
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 1,
+      "topSellerRank": 2,
       "rank": 1
     },
     {
@@ -33,8 +31,21 @@
         "final": 8000000,
         "discountPercent": 0
       },
-      "topSellerRank": 2,
+      "topSellerRank": 3,
       "rank": 2
+    },
+    {
+      "appId": 1172470,
+      "name": "Apex 레전드™",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/dc5c390e9a273a7248f75c1b2d59987f6179323c/header_alt_assets_7.jpg?t=1794339458",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 4,
+      "rank": 3
     },
     {
       "appId": 730,
@@ -45,26 +56,22 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 3,
-      "rank": 3
+      "topSellerRank": 5,
+      "rank": 4
     },
     {
-      "appId": 3669620,
-      "name": "Warhammer Survivors",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669620/dc61fccdeec6b05a58fbcdd7b1d0bbbe1f6999ea/header.jpg?t=1794319205",
+      "appId": 3513350,
+      "name": "Wuthering Waves",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/cd121d2c81c168deb3e84d0b83bb86665e225ff1/header_koreana.jpg?t=1794439536",
       "genres": [
         "액션",
-        "캐주얼",
-        "인디",
-        "RPG"
+        "어드벤처",
+        "RPG",
+        "무료 플레이"
       ],
-      "price": {
-        "currency": "KRW",
-        "final": 783000,
-        "discountPercent": 10
-      },
-      "topSellerRank": 4,
-      "rank": 4
+      "price": null,
+      "topSellerRank": 7,
+      "rank": 5
     },
     {
       "appId": 4262460,
@@ -79,26 +86,33 @@
         "앞서 해보기"
       ],
       "price": null,
-      "topSellerRank": 6,
-      "rank": 5
+      "topSellerRank": 8,
+      "rank": 6
     },
     {
-      "appId": 230410,
-      "name": "Warframe",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1793987416",
+      "appId": 2406770,
+      "name": "Bodycam",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/36264077393918f3945447eed3d6374cdf21e69a/header.jpg?t=1794250615",
       "genres": [
         "액션",
-        "RPG",
-        "무료 플레이"
+        "인디",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "전략",
+        "앞서 해보기"
       ],
-      "price": null,
-      "topSellerRank": 7,
-      "rank": 6
+      "price": {
+        "currency": "KRW",
+        "final": 3750000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 9,
+      "rank": 7
     },
     {
       "appId": 2767030,
       "name": "마블 라이벌즈",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c61f65c5968af5d85b0393005991ecee0184fcaf/header.jpg?t=1792140776",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/4c1bfbd580030210d8006af8bc1cca594c1f1635/header.jpg?t=1794453707",
       "genres": [
         "액션",
         "어드벤처",
@@ -110,23 +124,6 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 4576490,
-      "name": "Casualties: Unknown",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4576490/907888dce73f50c48410b5ab92971a0d95776b29/header.jpg?t=1794232782",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "시뮬레이션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 2108000,
-        "discountPercent": 15
-      },
       "topSellerRank": 10,
       "rank": 8
     }
