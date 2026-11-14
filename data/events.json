@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-13T09:34:58.018Z",
+  "generatedAt": "2026-11-14T08:59:57.302Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -8,93 +8,6 @@
     "rankingSource": "top-sellers"
   },
   "topGames": [
-    {
-      "appId": 4435490,
-      "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794339680",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 8000000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 1,
-      "rank": 1
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 2,
-      "rank": 2
-    },
-    {
-      "appId": 1172470,
-      "name": "Apex 레전드™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/dc5c390e9a273a7248f75c1b2d59987f6179323c/header_alt_assets_7.jpg?t=1794339458",
-      "genres": [
-        "액션",
-        "어드벤처",
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 3,
-      "rank": 3
-    },
-    {
-      "appId": 4262460,
-      "name": "ROB RUN",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
-      "genres": [
-        "액션",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "무료 플레이",
-        "앞서 해보기"
-      ],
-      "price": null,
-      "topSellerRank": 5,
-      "rank": 4
-    },
-    {
-      "appId": 2406770,
-      "name": "Bodycam",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/36264077393918f3945447eed3d6374cdf21e69a/header.jpg?t=1794250615",
-      "genres": [
-        "액션",
-        "인디",
-        "대규모 멀티플레이어",
-        "시뮬레이션",
-        "전략",
-        "앞서 해보기"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3750000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 7,
-      "rank": 5
-    },
-    {
-      "appId": 1973530,
-      "name": "Limbus Company",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1793975559",
-      "genres": [
-        "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 8,
-      "rank": 6
-    },
     {
       "appId": 2767030,
       "name": "마블 라이벌즈",
@@ -110,16 +23,111 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 9,
-      "rank": 7
+      "topSellerRank": 1,
+      "rank": 1
     },
     {
-      "appId": 3513350,
-      "name": "Wuthering Waves",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/cd121d2c81c168deb3e84d0b83bb86665e225ff1/header_koreana.jpg?t=1794439536",
+      "appId": 2406770,
+      "name": "Bodycam",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/b533bca55927692f0cf812ebb91c6e6e8f5cb4a6/header_alt_assets_4.jpg?t=1794590337",
+      "genres": [
+        "액션",
+        "인디",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "전략",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 3000000,
+        "discountPercent": 20
+      },
+      "topSellerRank": 2,
+      "rank": 2
+    },
+    {
+      "appId": 4435490,
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794339680",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 8000000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 3,
+      "rank": 3
+    },
+    {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 4,
+      "rank": 4
+    },
+    {
+      "appId": 3564740,
+      "name": "연운",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/4251a007d447ed5e424872a8005ef48dc696f486/header_alt_assets_11_koreana.jpg?t=1794552485",
       "genres": [
         "액션",
         "어드벤처",
+        "캐주얼",
+        "인디",
+        "대규모 멀티플레이어",
+        "레이싱",
+        "RPG",
+        "시뮬레이션",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 5,
+      "rank": 5
+    },
+    {
+      "appId": 1172470,
+      "name": "Apex 레전드™",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/dc5c390e9a273a7248f75c1b2d59987f6179323c/header_alt_assets_7.jpg?t=1794339458",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 6,
+      "rank": 6
+    },
+    {
+      "appId": 4262460,
+      "name": "ROB RUN",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
+      "genres": [
+        "액션",
+        "대규모 멀티플레이어",
+        "RPG",
+        "시뮬레이션",
+        "무료 플레이",
+        "앞서 해보기"
+      ],
+      "price": null,
+      "topSellerRank": 7,
+      "rank": 7
+    },
+    {
+      "appId": 230410,
+      "name": "Warframe",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1793987416",
+      "genres": [
+        "액션",
         "RPG",
         "무료 플레이"
       ],
