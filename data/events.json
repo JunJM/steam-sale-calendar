@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-15T09:29:45.075Z",
+  "generatedAt": "2026-11-16T09:48:39.170Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -56,6 +56,22 @@
       "rank": 3
     },
     {
+      "appId": 4262460,
+      "name": "ROB RUN",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
+      "genres": [
+        "액션",
+        "대규모 멀티플레이어",
+        "RPG",
+        "시뮬레이션",
+        "무료 플레이",
+        "앞서 해보기"
+      ],
+      "price": null,
+      "topSellerRank": 4,
+      "rank": 4
+    },
+    {
       "appId": 2767030,
       "name": "마블 라이벌즈",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/37b29210fdb3f998ea137a5c0fa8547bf08fd04c/header.jpg?t=1794561883",
@@ -68,22 +84,6 @@
         "RPG",
         "전략",
         "무료 플레이"
-      ],
-      "price": null,
-      "topSellerRank": 4,
-      "rank": 4
-    },
-    {
-      "appId": 4262460,
-      "name": "ROB RUN",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
-      "genres": [
-        "액션",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "무료 플레이",
-        "앞서 해보기"
       ],
       "price": null,
       "topSellerRank": 5,
@@ -99,8 +99,25 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 6,
+      "topSellerRank": 7,
       "rank": 6
+    },
+    {
+      "appId": 438100,
+      "name": "VRChat",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454",
+      "genres": [
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "스포츠",
+        "무료 플레이",
+        "앞서 해보기"
+      ],
+      "price": null,
+      "topSellerRank": 8,
+      "rank": 7
     },
     {
       "appId": 230410,
@@ -112,22 +129,6 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 9,
-      "rank": 7
-    },
-    {
-      "appId": 4115450,
-      "name": "Phantom Blade Zero",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1793261976",
-      "genres": [
-        "액션",
-        "RPG"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6980000,
-        "discountPercent": 0
-      },
       "topSellerRank": 10,
       "rank": 8
     }
