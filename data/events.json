@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-16T09:48:39.170Z",
+  "generatedAt": "2026-11-17T10:46:08.438Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -29,21 +29,6 @@
       "rank": 1
     },
     {
-      "appId": 4435490,
-      "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794339680",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 8000000,
-        "discountPercent": 0
-      },
-      "topSellerRank": 2,
-      "rank": 2
-    },
-    {
       "appId": 730,
       "name": "Counter-Strike 2",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
@@ -52,8 +37,39 @@
         "무료 플레이"
       ],
       "price": null,
+      "topSellerRank": 2,
+      "rank": 2
+    },
+    {
+      "appId": 4435490,
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794873974",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 8000000,
+        "discountPercent": 0
+      },
       "topSellerRank": 3,
       "rank": 3
+    },
+    {
+      "appId": 3321460,
+      "name": "붉은사막 Enhanced",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/4a895369007efe7cc9da27a999bbca2427d92bb3/header_koreana.jpg?t=1794478066",
+      "genres": [
+        "액션",
+        "어드벤처"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 6384000,
+        "discountPercent": 20
+      },
+      "topSellerRank": 4,
+      "rank": 4
     },
     {
       "appId": 4262460,
@@ -68,8 +84,21 @@
         "앞서 해보기"
       ],
       "price": null,
-      "topSellerRank": 4,
-      "rank": 4
+      "topSellerRank": 5,
+      "rank": 5
+    },
+    {
+      "appId": 230410,
+      "name": "Warframe",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1794847104",
+      "genres": [
+        "액션",
+        "RPG",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 6,
+      "rank": 6
     },
     {
       "appId": 2767030,
@@ -86,8 +115,8 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 5,
-      "rank": 5
+      "topSellerRank": 7,
+      "rank": 7
     },
     {
       "appId": 1172470,
@@ -99,38 +128,25 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 7,
-      "rank": 6
+      "topSellerRank": 9,
+      "rank": 8
     },
     {
-      "appId": 438100,
-      "name": "VRChat",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454",
-      "genres": [
-        "어드벤처",
-        "캐주얼",
-        "대규모 멀티플레이어",
-        "시뮬레이션",
-        "스포츠",
-        "무료 플레이",
-        "앞서 해보기"
-      ],
-      "price": null,
-      "topSellerRank": 8,
-      "rank": 7
-    },
-    {
-      "appId": 230410,
-      "name": "Warframe",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1793987416",
+      "appId": 1771300,
+      "name": "Kingdom Come: Deliverance II",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg?t=1777975568",
       "genres": [
         "액션",
-        "RPG",
-        "무료 플레이"
+        "어드벤처",
+        "RPG"
       ],
-      "price": null,
+      "price": {
+        "currency": "KRW",
+        "final": 2006000,
+        "discountPercent": 67
+      },
       "topSellerRank": 10,
-      "rank": 8
+      "rank": 9
     }
   ],
   "topGamesLoadFailed": false,
