@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-17T10:46:08.438Z",
+  "generatedAt": "2026-11-18T10:13:29.084Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -9,9 +9,21 @@
   },
   "topGames": [
     {
+      "appId": 730,
+      "name": "Counter-Strike 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+      "genres": [
+        "액션",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 1,
+      "rank": 1
+    },
+    {
       "appId": 2406770,
       "name": "Bodycam",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/b533bca55927692f0cf812ebb91c6e6e8f5cb4a6/header_alt_assets_4.jpg?t=1794683329",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/677415ebaf02fc7ae5fe8960e6055e65e9fa21a4/header_alt_assets_4.jpg?t=1794951323",
       "genres": [
         "액션",
         "인디",
@@ -25,20 +37,43 @@
         "final": 3000000,
         "discountPercent": 20
       },
-      "topSellerRank": 1,
-      "rank": 1
-    },
-    {
-      "appId": 730,
-      "name": "Counter-Strike 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
-      "genres": [
-        "액션",
-        "무료 플레이"
-      ],
-      "price": null,
       "topSellerRank": 2,
       "rank": 2
+    },
+    {
+      "appId": 3218350,
+      "name": "Melvor Idle 2: A RuneScape Adventure",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3218350/21b3f6881a12eef86b7c17b21640b396f3510f92/header.jpg?t=1794955439",
+      "genres": [
+        "캐주얼",
+        "인디",
+        "RPG",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 1530000,
+        "discountPercent": 10
+      },
+      "topSellerRank": 3,
+      "rank": 3
+    },
+    {
+      "appId": 1158310,
+      "name": "Crusader Kings III",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/f312b1a3188d87ec9840a1c0094a3cb57e07ad94/header_alt_assets_14_koreana.jpg?t=1794934751",
+      "genres": [
+        "RPG",
+        "시뮬레이션",
+        "전략"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 5500000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 4,
+      "rank": 4
     },
     {
       "appId": 4435490,
@@ -52,24 +87,8 @@
         "final": 8000000,
         "discountPercent": 0
       },
-      "topSellerRank": 3,
-      "rank": 3
-    },
-    {
-      "appId": 3321460,
-      "name": "붉은사막 Enhanced",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/4a895369007efe7cc9da27a999bbca2427d92bb3/header_koreana.jpg?t=1794478066",
-      "genres": [
-        "액션",
-        "어드벤처"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6384000,
-        "discountPercent": 20
-      },
-      "topSellerRank": 4,
-      "rank": 4
+      "topSellerRank": 5,
+      "rank": 5
     },
     {
       "appId": 4262460,
@@ -84,21 +103,26 @@
         "앞서 해보기"
       ],
       "price": null,
-      "topSellerRank": 5,
-      "rank": 5
-    },
-    {
-      "appId": 230410,
-      "name": "Warframe",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1794847104",
-      "genres": [
-        "액션",
-        "RPG",
-        "무료 플레이"
-      ],
-      "price": null,
       "topSellerRank": 6,
       "rank": 6
+    },
+    {
+      "appId": 3188660,
+      "name": "Motocross The Game",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3188660/header.jpg?t=1794891418",
+      "genres": [
+        "레이싱",
+        "시뮬레이션",
+        "스포츠",
+        "앞서 해보기"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 4900000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 7,
+      "rank": 7
     },
     {
       "appId": 2767030,
@@ -115,38 +139,37 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 7,
-      "rank": 7
+      "topSellerRank": 8,
+      "rank": 8
     },
     {
-      "appId": 1172470,
-      "name": "Apex 레전드™",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/dc5c390e9a273a7248f75c1b2d59987f6179323c/header_alt_assets_7.jpg?t=1794339458",
+      "appId": 230410,
+      "name": "Warframe",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1794847104",
       "genres": [
         "액션",
-        "어드벤처",
+        "RPG",
         "무료 플레이"
       ],
       "price": null,
       "topSellerRank": 9,
-      "rank": 8
+      "rank": 9
     },
     {
-      "appId": 1771300,
-      "name": "Kingdom Come: Deliverance II",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg?t=1777975568",
+      "appId": 5185890,
+      "name": "Zombies Aren't Real",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5185890/cd54755b9d15a2cad33471464fb630d6a5363ff0/header.jpg?t=1794839706",
       "genres": [
-        "액션",
-        "어드벤처",
-        "RPG"
+        "전략",
+        "앞서 해보기"
       ],
       "price": {
         "currency": "KRW",
-        "final": 2006000,
-        "discountPercent": 67
+        "final": 990000,
+        "discountPercent": 10
       },
       "topSellerRank": 10,
-      "rank": 9
+      "rank": 10
     }
   ],
   "topGamesLoadFailed": false,
