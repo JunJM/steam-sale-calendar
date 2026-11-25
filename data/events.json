@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T12:32:35.716Z",
+  "generatedAt": "2026-11-25T11:21:18.606Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -8,6 +8,34 @@
     "rankingSource": "top-sellers"
   },
   "topGames": [
+    {
+      "appId": 1172470,
+      "name": "Apex 레전드™",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/4219c147f1e094297c726d537518babba7f3ae2d/header.jpg?t=1794958367",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 1,
+      "rank": 1
+    },
+    {
+      "appId": 381210,
+      "name": "Dead by Daylight",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/c5cf48bd5676caa7e505ef7e552598d2a01effcd/header_alt_assets_11.jpg?t=1795543658",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 2150000,
+        "discountPercent": 0
+      },
+      "topSellerRank": 2,
+      "rank": 2
+    },
     {
       "appId": 730,
       "name": "Counter-Strike 2",
@@ -17,8 +45,8 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 1,
-      "rank": 1
+      "topSellerRank": 4,
+      "rank": 3
     },
     {
       "appId": 1174180,
@@ -33,38 +61,7 @@
         "final": 1825000,
         "discountPercent": 75
       },
-      "topSellerRank": 2,
-      "rank": 2
-    },
-    {
-      "appId": 3768760,
-      "name": "007 퍼스트 라이트",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/be65391533f072e79699be70ef2d47b7b2ac57ee/header_alt_assets_5.jpg?t=1795019577",
-      "genres": [
-        "액션",
-        "어드벤처"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3950000,
-        "discountPercent": 50
-      },
-      "topSellerRank": 3,
-      "rank": 3
-    },
-    {
-      "appId": 4435490,
-      "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794873974",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6800000,
-        "discountPercent": 15
-      },
-      "topSellerRank": 4,
+      "topSellerRank": 6,
       "rank": 4
     },
     {
@@ -80,8 +77,23 @@
         "final": 6093000,
         "discountPercent": 10
       },
-      "topSellerRank": 5,
+      "topSellerRank": 7,
       "rank": 5
+    },
+    {
+      "appId": 4435490,
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794873974",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 6800000,
+        "discountPercent": 15
+      },
+      "topSellerRank": 8,
+      "rank": 6
     },
     {
       "appId": 3240220,
@@ -97,57 +109,24 @@
         "final": 2420000,
         "discountPercent": 56
       },
-      "topSellerRank": 6,
-      "rank": 6
-    },
-    {
-      "appId": 4262460,
-      "name": "ROB RUN",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
-      "genres": [
-        "액션",
-        "대규모 멀티플레이어",
-        "RPG",
-        "시뮬레이션",
-        "무료 플레이",
-        "앞서 해보기"
-      ],
-      "price": null,
-      "topSellerRank": 8,
+      "topSellerRank": 9,
       "rank": 7
     },
     {
-      "appId": 1086940,
-      "name": "Baldur's Gate 3",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1777363040",
+      "appId": 3768760,
+      "name": "007 퍼스트 라이트",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/be65391533f072e79699be70ef2d47b7b2ac57ee/header_alt_assets_5.jpg?t=1795019577",
       "genres": [
-        "어드벤처",
-        "RPG",
-        "전략"
+        "액션",
+        "어드벤처"
       ],
       "price": {
         "currency": "KRW",
-        "final": 4620000,
-        "discountPercent": 30
-      },
-      "topSellerRank": 9,
-      "rank": 8
-    },
-    {
-      "appId": 281990,
-      "name": "Stellaris",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/fcb59f05b4803545b6fa24caffb76f2783a02e0a/header_alt_assets_15_koreana.jpg?t=1795442199",
-      "genres": [
-        "시뮬레이션",
-        "전략"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 1650000,
-        "discountPercent": 70
+        "final": 3950000,
+        "discountPercent": 50
       },
       "topSellerRank": 10,
-      "rank": 9
+      "rank": 8
     }
   ],
   "topGamesLoadFailed": false,
