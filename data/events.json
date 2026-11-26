@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T11:21:18.606Z",
+  "generatedAt": "2026-11-26T10:56:56.124Z",
   "source": {
     "upcomingEvents": "https://partner.steamgames.com/doc/marketing/upcoming_events",
     "topSellers": "https://store.steampowered.com/charts/topselling/?l=english",
@@ -18,23 +18,8 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 1,
-      "rank": 1
-    },
-    {
-      "appId": 381210,
-      "name": "Dead by Daylight",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/c5cf48bd5676caa7e505ef7e552598d2a01effcd/header_alt_assets_11.jpg?t=1795543658",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 2150000,
-        "discountPercent": 0
-      },
       "topSellerRank": 2,
-      "rank": 2
+      "rank": 1
     },
     {
       "appId": 730,
@@ -45,8 +30,58 @@
         "무료 플레이"
       ],
       "price": null,
-      "topSellerRank": 4,
+      "topSellerRank": 3,
+      "rank": 2
+    },
+    {
+      "appId": 2767030,
+      "name": "마블 라이벌즈",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/c82a472adcccdc8ad28c3a764150fb9629998a87/header_alt_assets_11.jpg?t=1795685356",
+      "genres": [
+        "액션",
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "레이싱",
+        "RPG",
+        "전략",
+        "무료 플레이"
+      ],
+      "price": null,
+      "topSellerRank": 5,
       "rank": 3
+    },
+    {
+      "appId": 4435490,
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794873974",
+      "genres": [
+        "액션"
+      ],
+      "price": {
+        "currency": "KRW",
+        "final": 6800000,
+        "discountPercent": 15
+      },
+      "topSellerRank": 6,
+      "rank": 4
+    },
+    {
+      "appId": 438100,
+      "name": "VRChat",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1795528802",
+      "genres": [
+        "어드벤처",
+        "캐주얼",
+        "대규모 멀티플레이어",
+        "시뮬레이션",
+        "스포츠",
+        "무료 플레이",
+        "앞서 해보기"
+      ],
+      "price": null,
+      "topSellerRank": 7,
+      "rank": 5
     },
     {
       "appId": 1174180,
@@ -61,8 +96,8 @@
         "final": 1825000,
         "discountPercent": 75
       },
-      "topSellerRank": 6,
-      "rank": 4
+      "topSellerRank": 8,
+      "rank": 6
     },
     {
       "appId": 2272360,
@@ -77,23 +112,8 @@
         "final": 6093000,
         "discountPercent": 10
       },
-      "topSellerRank": 7,
-      "rank": 5
-    },
-    {
-      "appId": 4435490,
-      "name": "Call of Duty®: Modern Warfare® 4",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1794873974",
-      "genres": [
-        "액션"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 6800000,
-        "discountPercent": 15
-      },
-      "topSellerRank": 8,
-      "rank": 6
+      "topSellerRank": 9,
+      "rank": 7
     },
     {
       "appId": 3240220,
@@ -108,22 +128,6 @@
         "currency": "KRW",
         "final": 2420000,
         "discountPercent": 56
-      },
-      "topSellerRank": 9,
-      "rank": 7
-    },
-    {
-      "appId": 3768760,
-      "name": "007 퍼스트 라이트",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/be65391533f072e79699be70ef2d47b7b2ac57ee/header_alt_assets_5.jpg?t=1795019577",
-      "genres": [
-        "액션",
-        "어드벤처"
-      ],
-      "price": {
-        "currency": "KRW",
-        "final": 3950000,
-        "discountPercent": 50
       },
       "topSellerRank": 10,
       "rank": 8
